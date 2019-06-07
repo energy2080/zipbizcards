@@ -1,0 +1,36 @@
+
+"#win": {
+	navBarHidden: true,
+	backgroundColor : "#A4A4A4",
+	orientationModes :[Ti.UI.LANDSCAPE_LEFT,Ti.UI.LANDSCAPE_RIGHT]
+}
+"#btnAddImage" :{
+	 top:10,
+	  width:"90%",
+	   height:40,
+	    backgroundColor:"#fff",
+	     color:"#000",
+	     font :{
+	     	fontWeight : "bold"
+	     },
+	     title : "Add Image",
+	     borderRadius : 5
+}
+".logo" :{
+	 height:"70%",
+	  width:Ti.UI.SIZE,
+	  touchEnabled : false
+}
+".text" :{
+	 color:"#fff",
+	 font :{
+		fontWeight : "bold",
+		fontSize : "10%"
+	},
+	  touchEnabled : false
+}
+".smallText" :{
+ 	font :{	
+		fontSize : "10%"
+	}	
+}

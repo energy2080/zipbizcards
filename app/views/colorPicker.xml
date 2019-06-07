@@ -1,0 +1,8 @@
+<Alloy>
+	<View id="overlay">
+		<View id="mainColor" onClick="updateColors" onTouchmove="updateColors"></View>
+		<View id="colorMix"></View>
+		<View id="whiteGradient"></View>
+		<View id="blackGradient" onClick="blackGradientClick"></View>
+	</View>
+</Alloy>

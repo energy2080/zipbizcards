@@ -1,0 +1,10 @@
+// "#view" : {
+// width : "25%",
+// height : "50%"
+// },
+"#tbl": {
+	width: "200",
+	height: Ti.UI.SIZE,
+	separatorColor :"#B38dded4",
+	backgroundColor : "#fff"	
+}

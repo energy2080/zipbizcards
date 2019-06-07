@@ -1,0 +1,21 @@
+<Alloy>
+	<NavigationWindow module="crux" platform="ios" backgroundColor="#F1F1F1">
+		<Window id="mainWindow">
+			<LeftNavButton>
+				<Button id="leftMenuButton" onClick="showLeftMenu" width="30" height="30" backgroundImage="/images/menu.png" />
+			</LeftNavButton>
+			<RightNavButton>
+				<Button id="rightMenuButton" onClick="addCard" width="30" height="30" backgroundImage="/images/plus.png" />
+			</RightNavButton>
+			<TitleControl>
+				<View width="Ti.UI.FILL">
+					<ImageView height="90%" width="Ti.UI.SIZE" image="/images/logo.png" />
+				</View>
+			</TitleControl>
+			<SlideMenu module="crux">
+				<LeftMenu module="crux" src="navMenu" />
+			</SlideMenu>
+			<RootView module="crux" />
+		</Window>
+	</NavigationWindow>
+</Alloy>
