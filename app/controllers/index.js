@@ -6,10 +6,12 @@ function showLeftMenu(e) {
 }
 
 function addCard(e) {
+	Alloy.Globals.crux.navigator.open("editor");
+	return;
 
 	Titanium.Media.openPhotoGallery({
 		success : function(e) {
-			if (e.mediaType === Titanium.Media.MEDIA_TYPE_PHOTO) {		
+			if (e.mediaType === Titanium.Media.MEDIA_TYPE_PHOTO) {
 				Alloy.Globals.crux.navigator.open("editor", {
 					card : e.media
 				});

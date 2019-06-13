@@ -16,6 +16,16 @@
 	     title : "Add Image",
 	     borderRadius : 5
 }
+"#txtFontSize" :{
+	 left:"77%",
+	  right:5,
+	   height:"100%",
+	    backgroundColor:"#454545",
+	     color:"#fff",
+	     font: {
+	     	fontSize : "10%"
+	     }
+}
 ".logo" :{
 	 height:"70%",
 	  width:Ti.UI.SIZE,

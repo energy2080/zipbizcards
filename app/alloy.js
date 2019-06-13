@@ -10,4 +10,30 @@
 //
 // Alloy.Globals.someGlobalFunction = function(){};
 require("crux");
-Alloy.Globals.fonts = ["ArialMT", "Angelina", "Aldine721BT-BoldCondensed", "Alternity", "AmerTypewriterITCbyBT-Medium", "ArialRoundedMTBold", "Archistico-Simple", "Chalkduster", "Cochin", "ComicZineOT", "LafayetScripts-Medium", "FrenchScriptMT", "FuturaBlackBT-Regular", "Harabara", "HollywoodHills", "Journal", "Jrhand", "LabtopSuperwideBoldish", "LansburyFG", "LithosPro-Regular", "ParchmentMF", "Schoolbully", "Swiss921BT-RegularA", "TwCenMT-Bold", "Verticalization","Cancel"];
+// Alloy.Globals.fonts = ["ArialMT", "Angelina", "Aldine721BT-BoldCondensed", "Alternity", "AmerTypewriterITCbyBT-Medium", "ArialRoundedMTBold", "Archistico-Simple", "Chalkduster", "Cochin", "ComicZineOT", "LafayetScripts-Medium", "FrenchScriptMT", "FuturaBlackBT-Regular", "Harabara", "HollywoodHills", "Journal", "Jrhand", "LabtopSuperwideBoldish", "LansburyFG", "LithosPro-Regular", "ParchmentMF", "Schoolbully", "Swiss921BT-RegularA", "TwCenMT-Bold", "Verticalization","Cancel"];
+
+Alloy.Globals.fonts = [{
+	title : "Arial",
+	style : ["Arial-BoldMT", "ArialMT", "Arial-ItalicMT"]
+},{
+	title : "Angelina",
+	style : ["Angelina"]
+},{
+	title : "Aldine",
+	style : ["Aldine721BT-BoldCondensed"]
+},{
+	title : "American Typewriter",
+	style : ["AmerTypewriterITCbyBT-Medium"]
+},{
+	title : "Archistico",
+	style : ["Archistico-Simple"]
+}, {
+	title : "Cancel"
+}];
+Alloy.Globals.fontStyle = {
+	"Arial" : ["Bold", "Regular", "Italic","Cancel"],
+	"Angelina" :["Regular","Cancel"],
+	"Aldine" :["Bold","Cancel"],
+	"American Typewriter" : ["Regular","Cancel"],
+	"Archistico" : ["Regular","Cancel"]
+};
