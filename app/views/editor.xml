@@ -5,18 +5,19 @@
 				<ImageView class="logo" image="/images/background.png"></ImageView>
 				<Label class="text" text="Background"></Label>
 			</View>
-			<View top="10" width="90%" height="20%" layout="vertical" index="1" onClick="action">
+			<View top="5" width="90%" height="20%" layout="vertical" index="1" onClick="action">
 				<ImageView class="logo" image="/images/aa.png"></ImageView>
 				<Label class="text" text="Text"></Label>
 			</View>
-			<View top="10" width="90%" height="20%" layout="vertical" index="2" onClick="action">
+			<View top="5" width="90%" height="20%" layout="vertical" index="2" onClick="action">
 				<ImageView class="logo" image="/images/image.png"></ImageView>
 				<Label class="text" text="Images"></Label>
 			</View>
-			<View top="10" width="90%" height="20%" layout="vertical" index="3" onClick="action">
+			<View top="5" width="90%" height="20%" layout="vertical" index="3" onClick="action">
 				<ImageView class="logo" image="/images/print.png"></ImageView>
 				<Label class="text" text="Print"></Label>
 			</View>
+			<Button id="btnSave" top="10" onClick="saveCard" >SAVE</Button>
 		</View>
 		<View id="viewTools" left="12%" width="0" height="Ti.UI.FILL" backgroundColor="#B1B1B1">
 			<View id="viewBackColor" top="10" width="90%" height="35%" backgroundColor="#fff" visible="false">

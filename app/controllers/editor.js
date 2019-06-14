@@ -6,7 +6,10 @@ var args = $.args,
 	title : Alloy.Globals.fonts[0].title
 },
     fName = Alloy.Globals.fonts[font.index].style[0],
-    color = "#fff";
+    color = "#fff",
+    folder,
+    dir,
+    subDir;
 
 var Draggable = require('ti.draggable');
 $.lblFontName.text = font.title;
@@ -18,16 +21,39 @@ function addDetails(dic) {
 		width : Ti.UI.SIZE,
 		height : Ti.UI.SIZE
 	});
-	var lbl = Ti.UI.createLabel({
-		text : dic.text,
-		font : dic.font,
-		width : Ti.UI.SIZE,
-		height : Ti.UI.SIZE,
-		touchEnabled : false,
-		color : dic.color
-	});
+	if (dic.text) {
+		var lbl = Ti.UI.createLabel({
+			text : dic.text,
+			font : dic.font,
+			width : Ti.UI.SIZE,
+			height : Ti.UI.SIZE,
+			touchEnabled : false,
+			color : dic.color
+		});
 
-	dview.add(lbl);
+		dview.add(lbl);
+	} else {
+		var scrlView = Ti.UI.createScrollView({
+			width : Ti.UI.FILL,
+			height : Ti.UI.FILL,
+			contentWidth : Ti.UI.SIZE,
+			contentHeight : Ti.UI.SIZE,
+			minZoomScale : 0.1,
+			maxZoomScale : 50,
+			zoomScale : 0
+		});
+		var img = Ti.UI.createImageView({
+			width : Ti.UI.SIZE,
+			height : Ti.UI.SIZE,
+			image : dic.image
+		});
+		// scrlView.addEventListener("pinch", function(e) {
+		// Ti.API.info("scale : " + e.scale + " , velocity : " + e.velocity + " , time : " + e.time + " , timeDelta : " + e.timeDelta + " , currentSpan : " + e.currentSpan + " , currentSpanX : " + e.currentSpanX + " , currentSpanY : " + e.currentSpanY + " , previousSpan : " + e.previousSpan + " , previousSpanX : " + e.previousSpanX + " , previousSpanY : " + e.previousSpanY + " , focusX : " + e.focusX + " , focusY : " + e.focusY);
+		// });
+		scrlView.add(img);
+		dview.zIndex = -5555;
+		dview.add(scrlView);
+	}
 	$.card.add(dview);
 }
 
@@ -63,6 +89,7 @@ function hideTools() {
 	if (preView) {
 		preView.backgroundColor = "transparent";
 	}
+	Ti.API.info("Scale : " + $.card.children[0].children[0].zoomScale + " , contentOffset : " + $.card.children[0].children[0].children[0].left + " , " + $.card.children[0].children[0].children[0].top);
 }
 
 function add(photo) {
@@ -72,6 +99,11 @@ function add(photo) {
 		width : "45%",
 		height : Ti.UI.SIZE,
 		image : photo
+	});
+	img.addEventListener("click", function(e) {
+		addDetails({
+			image : img.image
+		});
 	});
 	$.scrlImages.add(img);
 }
@@ -187,6 +219,30 @@ function showFont() {
 
 	fontView.showFonts();
 
+}
+
+function saveCard() {
+
+	if (!folder) {
+		folder = new Date().getTime();
+		dir = Ti.Filesystem.getFile(Ti.Filesystem.applicationSupportDirectory, folder);
+		dir.createDirectory();
+
+		Alloy.Globals.cards.push(folder);
+		Ti.App.Properties.setList("cards", Alloy.Globals.cards);
+
+		subDir = Ti.Filesystem.getFile(dir.nativePath, "images");
+		subDir.createDirectory();
+	}
+	var f = Ti.Filesystem.getFile(dir.nativePath, folder + ".jpg");
+	f.write($.card.toImage());
+	Ti.API.info(f.nativePath);
+	var f1;
+	for (var i = 0; i < $.scrlImages.children.length; i++) {
+		f1 = Ti.Filesystem.getFile(subDir.nativePath, i.toString() + ".jpg");
+		
+		Ti.API.info(f1.nativePath);
+	}
 }
 
 $.backPicker.setCallback({

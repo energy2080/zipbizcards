@@ -7,26 +7,20 @@ function showLeftMenu(e) {
 
 function addCard(e) {
 	Alloy.Globals.crux.navigator.open("editor");
-	return;
-
-	Titanium.Media.openPhotoGallery({
-		success : function(e) {
-			if (e.mediaType === Titanium.Media.MEDIA_TYPE_PHOTO) {
-				Alloy.Globals.crux.navigator.open("editor", {
-					card : e.media
-				});
-			}
-		},
-		error : function(e) {
-			alert("Error. Try again");
-		},
-		cancel : function(e) {
-
-		},
-		mediaTypes : [Ti.Media.MEDIA_TYPE_PHOTO]
-
-	});
-
 }
 
+if (Alloy.Globals.cards.length) {
+	var f,
+	    dir;
+	for (var i = 0; i < Alloy.Globals.cards.length; i++) {
+		dir = Ti.Filesystem.getFile(Ti.Filesystem.applicationSupportDirectory, Alloy.Globals.cards[i]);
+		f = Ti.Filesystem.getFile(dir.nativePath, Alloy.Globals.cards[i] + ".jpg");
+		var img = Ti.UI.createImageView({
+			width : Ti.UI.FILL,
+			height : Ti.UI.SIZE,
+			image : f.nativePath
+		});
+		$.scrlView.add(img);
+	}
+}
 Alloy.CFG.nav.open();

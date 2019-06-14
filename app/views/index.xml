@@ -16,6 +16,7 @@
 				<LeftMenu module="crux" src="navMenu" />
 			</SlideMenu>
 			<RootView module="crux" />
+			<ScrollView id="scrlView" top="0" width="Ti.UI.FILL" height="Ti.UI.FILL" layout="vertical" contentWidth="100%" contentHeight="Ti.UI.SIZE"></ScrollView>
 		</Window>
 	</NavigationWindow>
 </Alloy>
