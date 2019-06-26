@@ -1,4 +1,5 @@
 <Alloy>
+	
 	<View backgroundColor="#fff" width="Ti.UI.FILL" height="Ti.UI.FILL">
 	</View>
 </Alloy>

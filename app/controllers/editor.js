@@ -80,16 +80,16 @@ function action(e) {
 	preView = e.source;
 
 	$.viewTools.width = "26%";
-	$.viewCard.left = "40%";
+	$.viewCard.left = "38%";
 }
 
 function hideTools() {
-	$.viewTools.width = "0";
+	$.viewTools.width = 0;
 	$.viewCard.left = "12%";
 	if (preView) {
 		preView.backgroundColor = "transparent";
 	}
-	Ti.API.info("Scale : " + $.card.children[0].children[0].zoomScale + " , contentOffset : " + $.card.children[0].children[0].children[0].left + " , " + $.card.children[0].children[0].children[0].top);
+	// Ti.API.info("Scale : " + $.card.children[0].children[0].zoomScale + " , contentOffset : " + $.card.children[0].children[0].children[0].left + " , " + $.card.children[0].children[0].children[0].top);
 }
 
 function add(photo) {
@@ -172,7 +172,7 @@ function setTextColor(hex) {
 }
 
 function setBackColor(color) {
-	$.win.backgroundColor = color;
+	$.card.backgroundColor = color;
 }
 
 function addText() {
@@ -184,6 +184,7 @@ function addText() {
 		},
 		color : color
 	});
+	$.txtText.value = "";
 }
 
 var fontView = Alloy.createController("fontTable");
@@ -222,27 +223,33 @@ function showFont() {
 }
 
 function saveCard() {
+	hideTools();
+	setTimeout(function(e) {
 
-	if (!folder) {
-		folder = new Date().getTime();
-		dir = Ti.Filesystem.getFile(Ti.Filesystem.applicationSupportDirectory, folder);
-		dir.createDirectory();
+		if (!folder) {
+			folder = new Date().getTime();
+			dir = Ti.Filesystem.getFile(Ti.Filesystem.applicationSupportDirectory, folder);
+			dir.createDirectory();
 
-		Alloy.Globals.cards.push(folder);
-		Ti.App.Properties.setList("cards", Alloy.Globals.cards);
+			Alloy.Globals.cards.push(folder);
+			Ti.App.Properties.setList("cards", Alloy.Globals.cards);
+			Ti.API.info(Alloy.Globals.cards.push);
+			subDir = Ti.Filesystem.getFile(dir.nativePath, "images");
+			subDir.createDirectory();
+		}
+		var f = Ti.Filesystem.getFile(dir.nativePath, folder + ".jpg");
+		Ti.API.info(f.write($.card.toImage()));
+		args.cb && args.cb();
 
-		subDir = Ti.Filesystem.getFile(dir.nativePath, "images");
-		subDir.createDirectory();
-	}
-	var f = Ti.Filesystem.getFile(dir.nativePath, folder + ".jpg");
-	f.write($.card.toImage());
-	Ti.API.info(f.nativePath);
-	var f1;
-	for (var i = 0; i < $.scrlImages.children.length; i++) {
-		f1 = Ti.Filesystem.getFile(subDir.nativePath, i.toString() + ".jpg");
-		
-		Ti.API.info(f1.nativePath);
-	}
+		var f1;
+		if ($.scrlImages.children.length) {
+			for (var i = 0; i < $.scrlImages.children.length; i++) {
+				f1 = Ti.Filesystem.getFile(subDir.nativePath, i.toString() + ".jpg");
+
+				Ti.API.info(f1.nativePath);
+			}
+		}
+	}, 400);
 }
 
 $.backPicker.setCallback({
@@ -252,4 +259,9 @@ $.backPicker.setCallback({
 $.textPicker.setCallback({
 	success : setTextColor
 });
+function close() {
+	// Alloy.Globals.crux.close();
+	$.win.close();
+}
+
 // $.imgCard.image = args.card;
