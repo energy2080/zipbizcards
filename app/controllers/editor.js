@@ -3,13 +3,15 @@ var args = $.args,
     preView,
     font = {
 	index : 0,
-	title : Alloy.Globals.fonts[0].title
+	title : Alloy.Globals.fonts[0].title,
+	styleIndex : 0
 },
     fName = Alloy.Globals.fonts[font.index].style[0],
     color = "#fff",
     folder,
     dir,
-    subDir;
+    subDir,
+    selectedLbl;
 
 var Draggable = require('ti.draggable');
 $.lblFontName.text = font.title;
@@ -27,10 +29,44 @@ function addDetails(dic) {
 			font : dic.font,
 			width : Ti.UI.SIZE,
 			height : Ti.UI.SIZE,
-			touchEnabled : false,
-			color : dic.color
+			// touchEnabled : false,
+			color : dic.color,
+			_param : {
+				fontIndex : font.index,
+				styleIndex : font.styleIndex
+			}
 		});
+		lbl.addEventListener("singletap", function(e) {
 
+			if (btnDelete.visible) {
+				btnDelete.visible = false;
+				$.btnAdd.title = "ADD";
+				selectedLbl = null;
+				$.txtText.value = "";
+			} else {
+				$.txtText.value = e.source.text;
+				$.txtFontSize.value = e.source.font.fontSize;
+				$.textPicker.setColor = e.source.color;
+
+				font = {
+					index : e.source._param.fontIndex,
+					title : Alloy.Globals.fonts[e.source._param.fontIndex].title,
+					styleIndex : e.source._param.styleIndex
+				};
+
+				fName = Alloy.Globals.fonts[font.index].style[font.styleIndex];
+				color = e.source.color;
+				$.viewFontColor.backgroundColor = color;
+				$.textPicker.setBackColor(color);
+
+				$.lblFontName.text = Alloy.Globals.fonts[e.source._param.fontIndex].title;
+				$.lblFontStyle.text = Alloy.Globals.fontStyle[$.lblFontName.text][e.source._param.styleIndex];
+
+				btnDelete.visible = true;
+				$.btnAdd.title = "UPDATE";
+				selectedLbl = e.source;
+			}
+		});
 		dview.add(lbl);
 	} else {
 		var scrlView = Ti.UI.createScrollView({
@@ -47,6 +83,19 @@ function addDetails(dic) {
 			height : Ti.UI.SIZE,
 			image : dic.image
 		});
+		img.addEventListener("click", function() {
+			var dialog = Ti.UI.createAlertDialog({
+				title : "Remove",
+				message : "Sure to remove this detail?",
+				buttonNames : ["No", "Yes"]
+			});
+			dialog.addEventListener('click', function(e) {
+				if (e.index) {
+					dview.remove(scrlView);
+				}
+			});
+			dialog.show();
+		});
 		// scrlView.addEventListener("pinch", function(e) {
 		// Ti.API.info("scale : " + e.scale + " , velocity : " + e.velocity + " , time : " + e.time + " , timeDelta : " + e.timeDelta + " , currentSpan : " + e.currentSpan + " , currentSpanX : " + e.currentSpanX + " , currentSpanY : " + e.currentSpanY + " , previousSpan : " + e.previousSpan + " , previousSpanX : " + e.previousSpanX + " , previousSpanY : " + e.previousSpanY + " , focusX : " + e.focusX + " , focusY : " + e.focusY);
 		// });
@@ -54,6 +103,30 @@ function addDetails(dic) {
 		dview.zIndex = -5555;
 		dview.add(scrlView);
 	}
+	var btnDelete = Ti.UI.createButton({
+		top : 0,
+		right : 0,
+		width : 15,
+		height : 15,
+		backgroundImage : "/images/close.png",
+		visible : false
+	});
+	btnDelete.addEventListener('click', function(e) {
+		var dialog = Ti.UI.createAlertDialog({
+			title : "Remove",
+			message : "Sure to remove this detail?",
+			buttonNames : ["No", "Yes"]
+		});
+		dialog.addEventListener('click', function(e) {
+			if (e.index) {
+				$.card.remove(dview);
+			}
+		});
+		dialog.show();
+
+	});
+
+	dview.add(btnDelete);
 	$.card.add(dview);
 }
 
@@ -176,15 +249,30 @@ function setBackColor(color) {
 }
 
 function addText() {
-	addDetails({
-		text : $.txtText.value,
-		font : {
+	if ($.btnAdd.title == "ADD") {
+		addDetails({
+			text : $.txtText.value,
+			font : {
+				fontFamily : fName,
+				fontSize : parseInt($.txtFontSize.value)
+			},
+			color : color
+		});
+		$.txtText.value = "";
+	} else {
+		selectedLbl.text = $.txtText.value;
+		selectedLbl.font = {
 			fontFamily : fName,
 			fontSize : parseInt($.txtFontSize.value)
-		},
-		color : color
-	});
-	$.txtText.value = "";
+		};
+		selectedLbl.color = color;
+
+		selectedLbl._param = {
+			fontIndex : font.index,
+			styleIndex : font.styleIndex
+		};
+	}
+
 }
 
 var fontView = Alloy.createController("fontTable");
@@ -193,6 +281,7 @@ fontView.on('setFont', function(dic) {
 	Ti.API.info("Font : " + dic.title);
 	$.lblFontName.text = dic.title;
 	font = dic;
+	font.styleIndex = 0;
 	fName = Alloy.Globals.fonts[font.index].style[0];
 	$.lblFontStyle.text = Alloy.Globals.fontStyle[font.title][0];
 });
@@ -209,6 +298,7 @@ function showStyle() {
 		if (e.index != (Alloy.Globals.fontStyle[font.title].length - 1)) {
 			fName = Alloy.Globals.fonts[font.index].style[e.index];
 			$.lblFontStyle.text = Alloy.Globals.fontStyle[font.title][e.index];
+			font.styleIndex = e.index;
 			Ti.API.info("Font Family : " + fName);
 		}
 

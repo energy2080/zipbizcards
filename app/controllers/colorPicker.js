@@ -69,4 +69,8 @@ function blackGradientClick(evt) {
 	}
 	//edit.remove(overlay);
 	cb.success('#' + color);
-} 
+}
+
+$.setBackColor = function(color) {
+	$.colorMix.backgroundColor = color;
+};
