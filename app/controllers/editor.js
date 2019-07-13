@@ -1,6 +1,9 @@
 // Arguments passed into this controller can be accessed via the `$.args` object directly or:
 var args = $.args,
     preView,
+    details,
+    baseHeight,
+    baseWidth,
     font = {
 	index : 0,
 	title : Alloy.Globals.fonts[0].title,
@@ -23,6 +26,15 @@ function addDetails(dic) {
 		width : Ti.UI.SIZE,
 		height : Ti.UI.SIZE
 	});
+	dview.addEventListener("move", function(e) {
+
+		dview.top = e.top;
+		dview.left = e.left;
+	});
+	if (dic.top && dic.left) {
+		dview.top = dic.top;
+		dview.left = dic.left;
+	}
 	if (dic.text) {
 		var lbl = Ti.UI.createLabel({
 			text : dic.text,
@@ -31,10 +43,7 @@ function addDetails(dic) {
 			height : Ti.UI.SIZE,
 			// touchEnabled : false,
 			color : dic.color,
-			_param : {
-				fontIndex : font.index,
-				styleIndex : font.styleIndex
-			}
+			_param : dic._param
 		});
 		lbl.addEventListener("singletap", function(e) {
 
@@ -65,6 +74,9 @@ function addDetails(dic) {
 				btnDelete.visible = true;
 				$.btnAdd.title = "UPDATE";
 				selectedLbl = e.source;
+				action({
+					source : $.txtTool
+				});
 			}
 		});
 		dview.add(lbl);
@@ -76,14 +88,36 @@ function addDetails(dic) {
 			contentHeight : Ti.UI.SIZE,
 			minZoomScale : 0.1,
 			maxZoomScale : 50,
-			zoomScale : 0
+			zoomScale : dic.zoomScale
 		});
 		var img = Ti.UI.createImageView({
 			width : Ti.UI.SIZE,
 			height : Ti.UI.SIZE,
-			image : dic.image
+			imgIndex : dic.imgIndex ? dic.imgIndex : $.scrlImages.children.length - 1
 		});
+		if (args.details) {
+			img.image = Ti.Filesystem.getFile(dic.image).read();
+		} else {
+			img.image = dic.image;
+		}
+		// img.addEventListener('pinch', function(e) {
+		//
+		// img.height = baseHeight * e.scale;
+		//
+		// img.width = baseWidth * e.scale;
+		//
+		// });
+		// img.addEventListener('touchstart', function(e) {
+		//
+		// // Ti.API.info("Rect :: " + JSON.stringify(img.rect) + " >> " + "Center :: " + JSON.stringify(img.center) + " >> " + "Size :: " + JSON.stringify(img.size) + " >> " + "toImage :: " + JSON.stringify(img.toImage()));
+		// Ti.API.info("toImage :: " + img.toImage().height + " , " + img.toImage().width);
+		// baseHeight = img.toImage().height;
+		//
+		// baseWidth = img.toImage().width;
+		//
+		// });
 		img.addEventListener("click", function() {
+
 			var dialog = Ti.UI.createAlertDialog({
 				title : "Remove",
 				message : "Sure to remove this detail?",
@@ -120,6 +154,8 @@ function addDetails(dic) {
 		dialog.addEventListener('click', function(e) {
 			if (e.index) {
 				$.card.remove(dview);
+				$.txtText.value = "";
+				$.btnAdd.title = "ADD";
 			}
 		});
 		dialog.show();
@@ -128,6 +164,49 @@ function addDetails(dic) {
 
 	dview.add(btnDelete);
 	$.card.add(dview);
+}
+
+function add(photo) {
+	var img = Ti.UI.createImageView({
+		top : 10,
+		left : "5%",
+		width : "45%",
+		height : Ti.UI.SIZE,
+		image : photo
+	});
+	img.addEventListener("click", function(e) {
+		addDetails({
+			image : img.image,
+			zoomScale : 0
+		});
+	});
+	$.scrlImages.add(img);
+}
+
+if (args.details) {
+	Ti.API.info(args.details);
+	folder = args.id;
+	details = JSON.parse(args.details);
+	color = details.parent.backgroundColor;
+
+	$.card.backgroundColor = color;
+	$.backPicker.setBackColor(color);
+
+	for (var key in details) {
+		if (key != "parent") {
+			if (details[key]) {
+				addDetails(details[key]);
+			}
+		}
+	}
+	dir = Ti.Filesystem.getFile(Ti.Filesystem.applicationSupportDirectory, args.id);
+	subDir = Ti.Filesystem.getFile(dir.nativePath, "images");
+
+	var imgs = subDir.getDirectoryListing();
+
+	for (var i = 0; i < imgs.length; i++) {
+		add(Ti.Filesystem.getFile(subDir.nativePath, imgs[i]).read());
+	}
 }
 
 function action(e) {
@@ -151,34 +230,20 @@ function action(e) {
 	}
 	e.source.backgroundColor = "#B1B1B1";
 	preView = e.source;
-
-	$.viewTools.width = "26%";
-	$.viewCard.left = "38%";
+	$.viewTools.visible = true;
 }
 
 function hideTools() {
-	$.viewTools.width = 0;
-	$.viewCard.left = "12%";
+	$.viewTools.visible = false;
+
 	if (preView) {
 		preView.backgroundColor = "transparent";
 	}
-	// Ti.API.info("Scale : " + $.card.children[0].children[0].zoomScale + " , contentOffset : " + $.card.children[0].children[0].children[0].left + " , " + $.card.children[0].children[0].children[0].top);
-}
+	$.btnAdd.title = "ADD";
+	selectedLbl = null;
+	$.txtText.value = "";
 
-function add(photo) {
-	var img = Ti.UI.createImageView({
-		top : 10,
-		left : "5%",
-		width : "45%",
-		height : Ti.UI.SIZE,
-		image : photo
-	});
-	img.addEventListener("click", function(e) {
-		addDetails({
-			image : img.image
-		});
-	});
-	$.scrlImages.add(img);
+	// Ti.API.info("Scale : " + $.card.children[0].children[0].zoomScale + " , contentOffset : " + $.card.children[0].children[0].children[0].left + " , " + $.card.children[0].children[0].children[0].top);
 }
 
 function openGallery() {
@@ -256,7 +321,11 @@ function addText() {
 				fontFamily : fName,
 				fontSize : parseInt($.txtFontSize.value)
 			},
-			color : color
+			color : color,
+			_param : {
+				fontIndex : font.index,
+				styleIndex : font.styleIndex
+			}
 		});
 		$.txtText.value = "";
 	} else {
@@ -313,33 +382,61 @@ function showFont() {
 }
 
 function saveCard() {
-	hideTools();
-	setTimeout(function(e) {
 
-		if (!folder) {
-			folder = new Date().getTime();
-			dir = Ti.Filesystem.getFile(Ti.Filesystem.applicationSupportDirectory, folder);
-			dir.createDirectory();
+	if (!folder) {
+		folder = new Date().getTime();
+		dir = Ti.Filesystem.getFile(Ti.Filesystem.applicationSupportDirectory, folder);
+		dir.createDirectory();
 
-			Alloy.Globals.cards.push(folder);
-			Ti.App.Properties.setList("cards", Alloy.Globals.cards);
-			Ti.API.info(Alloy.Globals.cards.push);
-			subDir = Ti.Filesystem.getFile(dir.nativePath, "images");
-			subDir.createDirectory();
+		Alloy.Globals.cards.push(folder);
+		Ti.App.Properties.setList("cards", Alloy.Globals.cards);
+		Ti.API.info(Alloy.Globals.cards.push);
+		subDir = Ti.Filesystem.getFile(dir.nativePath, "images");
+		subDir.createDirectory();
+	}
+	var f = Ti.Filesystem.getFile(dir.nativePath, folder + ".jpg");
+	Ti.API.info(f.write($.card.toImage()));
+
+	var dic = {
+		parent : {
+			backgroundColor : $.card.backgroundColor
 		}
-		var f = Ti.Filesystem.getFile(dir.nativePath, folder + ".jpg");
-		Ti.API.info(f.write($.card.toImage()));
-		args.cb && args.cb();
+	};
+	for (var i = 0; i < $.card.children.length; i++) {
+		var v = $.card.children[i];
+		// Ti.API.info("Top >> " + v.top + " , Left >> " + v.left);
+		dic[i.toString()] = {
+			top : v.top,
+			left : v.left
+		};
+		if (v.children[0].text) {
+			dic[i.toString()].text = v.children[0].text;
+			dic[i.toString()].color = v.children[0].color;
+			dic[i.toString()].font = v.children[0].font;
+			dic[i.toString()]._param = v.children[0]._param;
+		} else {
 
-		var f1;
-		if ($.scrlImages.children.length) {
-			for (var i = 0; i < $.scrlImages.children.length; i++) {
-				f1 = Ti.Filesystem.getFile(subDir.nativePath, i.toString() + ".jpg");
-
-				Ti.API.info(f1.nativePath);
-			}
+			dic[i.toString()].zoomScale = v.children[0].zoomScale;
+			dic[i.toString()].imgIndex = v.children[0].children[0].imgIndex.toString();
+			dic[i.toString()].image = Ti.Filesystem.getFile(subDir.nativePath, v.children[0].children[0].imgIndex.toString() + ".jpg").nativePath;
 		}
-	}, 400);
+	}
+	Ti.API.info(JSON.stringify(dic));
+	Alloy.Globals.db.open();
+	Alloy.Globals.db.addCard(folder, JSON.stringify(dic));
+	Alloy.Globals.db.close();
+
+	args.cb && args.cb();
+
+	var f1;
+	if ($.scrlImages.children.length) {
+		for (var i = 0; i < $.scrlImages.children.length; i++) {
+			f1 = Ti.Filesystem.getFile(subDir.nativePath, i.toString() + ".jpg");
+			f1.write($.scrlImages.children[i].image);
+			// Ti.API.info("Top >> " + $.scrlImages.children[i].top + " , Left >> " + $.scrlImages.children[i].left);
+		}
+	}
+
 }
 
 $.backPicker.setCallback({

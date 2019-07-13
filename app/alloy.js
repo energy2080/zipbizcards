@@ -9,6 +9,9 @@
 // object. For example:
 //
 // Alloy.Globals.someGlobalFunction = function(){};
+Alloy.Globals.db = require('db').db();
+Alloy.Globals.db.init();
+
 require("crux");
 // Alloy.Globals.fonts = ["ArialMT", "Angelina", "Aldine721BT-BoldCondensed", "Alternity", "AmerTypewriterITCbyBT-Medium", "ArialRoundedMTBold", "Archistico-Simple", "Chalkduster", "Cochin", "ComicZineOT", "LafayetScripts-Medium", "FrenchScriptMT", "FuturaBlackBT-Regular", "Harabara", "HollywoodHills", "Journal", "Jrhand", "LabtopSuperwideBoldish", "LansburyFG", "LithosPro-Regular", "ParchmentMF", "Schoolbully", "Swiss921BT-RegularA", "TwCenMT-Bold", "Verticalization","Cancel"];
 
@@ -40,4 +43,4 @@ Alloy.Globals.fontStyle = {
 if (!Ti.App.Properties.hasProperty("cards")) {
 	Ti.App.Properties.setList("cards", []);
 }
-Alloy.Globals.cards =Ti.App.Properties.getList("cards");
+Alloy.Globals.cards = Ti.App.Properties.getList("cards"); 

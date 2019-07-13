@@ -17,13 +17,26 @@
 	     borderRadius : 5
 }
 "#txtFontSize" :{
-	 left:"77%",
-	  right:5,
+	 left:"80%",
+	  right:0,
 	   height:"100%",
 	    backgroundColor:"#454545",
 	     color:"#fff",
 	     font: {
 	     	fontSize : "10%"
+	     },
+	      borderRadius:5
+}
+"#btnHide" :{
+	 top:20,
+	  right:20,
+	   height:50,
+	    width:50,
+	     color: "#fff",
+	     title : "X",
+	     font : {
+	     	fontSize : "30%",
+	     	fontWeight : "bold"
 	     }
 }
 ".logo" :{

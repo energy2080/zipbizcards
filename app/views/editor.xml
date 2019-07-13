@@ -5,7 +5,7 @@
 				<ImageView class="logo" image="/images/background.png"></ImageView>
 				<Label class="text" text="Background"></Label>
 			</View>
-			<View top="0" width="90%" height="20%" layout="vertical" index="1" onClick="action">
+			<View id="txtTool" top="0" width="90%" height="20%" layout="vertical" index="1" onClick="action">
 				<ImageView class="logo" image="/images/aa.png"></ImageView>
 				<Label class="text" text="Text"></Label>
 			</View>
@@ -20,46 +20,45 @@
 			<Button id="btnSave" top="0" onClick="saveCard" >SAVE</Button>
 			<Button id="btnClose" top="5" onClick="close" color="red" >CLOSE</Button>
 		</View>
-		<View id="viewTools" left="12%" width="0" height="Ti.UI.FILL" backgroundColor="#B1B1B1">
-			<View id="viewBackColor" top="10" width="90%" height="35%" backgroundColor="#fff" visible="false">
-				<View top="5" left="5" right="5" height="90%">
+		<View id="viewCard" left="12%" width="Ti.UI.FILL" height="Ti.UI.SIZE">
+			<View id="card" width="95%" height="95%" backgroundColor="#fff"></View>
+		</View>
+		<View id="viewTools" width="Ti.UI.FILL" height="Ti.UI.FILL" backgroundColor="#80000000" visible="false">
+			<View id="viewBackColor" width="40%" height="60%" backgroundColor="#C5C5C5" visible="false">
+				<View width="95%" height="95%">
 					<Require src="colorPicker" id="backPicker" type="view"></Require>
 				</View>
 			</View>
-			<View id="viewText" top="10" width="90%" height="100%" layout="vertical" visible="false" >
-				<Label top="20" left="0" text="Text" color="#000" class="text"></Label>
-				<TextField id="txtText" top="5" width="100%" height="35" backgroundColor="#fff" hintText="Enter text"></TextField>
-				<View top="10" left="0" right="0" height="50%" layout="vertical" backgroundColor="#2E2F30">
-					<View top="5" left="5" right="5" width="100%" height="25">
-						<View left="0" width="75%" backgroundColor="#454545" onClick="showFont">
+			<View id="viewText" width="40%" height="95%" layout="vertical" backgroundColor="#C5C5C5" visible="false" >
+				<Label top="20" left="2.5%" text="Text" color="#000" class="text"></Label>
+				<TextField id="txtText" top="5" width="95%" height="35" backgroundColor="#fff" hintText="Enter text"></TextField>
+				<View top="10" width="95%" height="60%" layout="vertical" backgroundColor="#2E2F30">
+					<View top="5" left="5" right="5" height="25">
+						<View left="0" width="75%" backgroundColor="#454545" borderRadius="5" onClick="showFont">
 							<Label id="lblFontName" left="5" color="#fff" class="smallText" touchEnabled="false">Arial</Label>
 							<Label right="5" color="#fff" class="smallText" text="˅" touchEnabled="false"></Label>
 						</View>
 						<TextField id="txtFontSize">11</TextField>
 					</View>
-					<View top="5" left="5" right="5" width="100%" height="25">
-						<View left="0" width="75%" backgroundColor="#454545" onClick="showStyle">
+					<View top="5" left="5" right="5" height="25">
+						<View left="0" width="75%" backgroundColor="#454545" borderRadius="5" onClick="showStyle">
 							<Label id="lblFontStyle" left="5" color="#fff" class="smallText" touchEnabled="false">Bold</Label>
 							<Label right="5" color="#fff" class="smallText" text="˅" touchEnabled="false"></Label>
 						</View>
-						<View id="viewFontColor" left="77%" right="5" height="100%" backgroundColor="#fff"></View>
+						<View id="viewFontColor" left="80%" right="0" height="100%" backgroundColor="#fff" borderRadius="5"></View>
 					</View>
-					<View top="10" width="100%" height="75%">
+					<View top="10" width="100%" height="70%">
 						<Require src="colorPicker" id="textPicker" type="view"></Require>
 					</View>
 				</View>
-				<Button id="btnAdd" top="10" height="40" width="50%" color="#fff" onClick="addText">ADD</Button>
+				<Button id="btnAdd" top="15" height="40" width="50%" color="#fff" onClick="addText">ADD</Button>
 			</View>
-			<View id="viewImages" top="10" width="100%" height="100%" visible="false">
+			<View id="viewImages" top="10" width="50%" height="100%" visible="false">
 				<Button id="btnAddImage" onClick="addImage"></Button>
 				<ScrollView id="scrlImages" left="0" top="60" width="100%" contentWidth="100%" layout="horizontal" scrollType="vertical"></ScrollView>
 			</View>
-			<Button id="btnHide" bottom="20" height="40" width="50%" color="red" onClick="hideTools">Close</Button>
+			<Button id="btnHide" onClick="hideTools" ></Button>
 		</View>
-		<View id="viewCard" left="12%" width="Ti.UI.FILL" height="Ti.UI.SIZE">
-			<View id="card" width="95%" height="95%" backgroundColor="#fff">
-				
-			</View>
-		</View>
+
 	</Window>
 </Alloy>
