@@ -16,7 +16,8 @@
 						<ImageView height="90%" width="Ti.UI.SIZE" image="/images/logo.png" />
 					</View>
 				</TitleControl>
-				<ScrollView id="scrlView"></ScrollView>
+				<!-- <ScrollView id="scrlView"></ScrollView> -->
+				<TableView id="tblView" editable="true" onDelete="deleteRow"></TableView>
 			</Window>
 		</NavigationWindow>
 	</Widget>

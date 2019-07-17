@@ -14,11 +14,36 @@ var args = $.args,
     folder,
     dir,
     subDir,
-    selectedLbl;
+    selectedLbl,
+    dialogSize,
+    size = [],
+    rotate = 90;
 
 var Draggable = require('ti.draggable');
 $.lblFontName.text = font.title;
 $.lblFontStyle.text = Alloy.Globals.fontStyle[font.title][0];
+
+function showFontSize(e) {
+	if (!dialogSize) {
+		for (var i = 1; i < 51; i++) {
+			size[i] = i;
+		}
+		size.push("Cancel");
+		dialogSize = Ti.UI.createOptionDialog({
+			options : size,
+			cancel : size.length - 1,
+			title : "Select Font Size"
+		});
+		dialogSize.addEventListener('click', function(e) {
+			if (e.index != (size.length - 1)) {
+				$.lblFontSize.text = size[e.index];
+			}
+
+		});
+	}
+
+	dialogSize.show();
+}
 
 function addDetails(dic) {
 	Ti.API.info(dic);
@@ -54,7 +79,7 @@ function addDetails(dic) {
 				$.txtText.value = "";
 			} else {
 				$.txtText.value = e.source.text;
-				$.txtFontSize.value = e.source.font.fontSize;
+				$.lblFontSize.text = e.source.font.fontSize;
 				$.textPicker.setColor = e.source.color;
 
 				font = {
@@ -117,7 +142,52 @@ function addDetails(dic) {
 		//
 		// });
 		img.addEventListener("click", function() {
+			if (imgDelete.visible) {
+				imgDelete.visible = false;
+				imgRotate.visible = false;
+			} else {
+				imgDelete.visible = true;
+				imgRotate.visible = true;
+			}
+			// var dialog = Ti.UI.createAlertDialog({
+			// title : "Remove",
+			// message : "Sure to remove this detail?",
+			// buttonNames : ["No", "Yes"]
+			// });
+			// dialog.addEventListener('click', function(e) {
+			// if (e.index) {
+			// dview.remove(scrlView);
+			// }
+			// });
+			// dialog.show();
+		});
+		// scrlView.addEventListener("pinch", function(e) {
+		// Ti.API.info("scale : " + e.scale + " , velocity : " + e.velocity + " , time : " + e.time + " , timeDelta : " + e.timeDelta + " , currentSpan : " + e.currentSpan + " , currentSpanX : " + e.currentSpanX + " , currentSpanY : " + e.currentSpanY + " , previousSpan : " + e.previousSpan + " , previousSpanX : " + e.previousSpanX + " , previousSpanY : " + e.previousSpanY + " , focusX : " + e.focusX + " , focusY : " + e.focusY);
+		// });
+		scrlView.add(img);
 
+		if (dic.rotate) {
+			var matrix = Ti.UI.create2DMatrix({
+				rotate : dic.rotate
+			});
+			var a1 = Ti.UI.createAnimation();
+			a1.transform = matrix;
+			a1.duration = 100;
+			scrlView.animate(a1, function() {
+
+				rotate = dic.rotate;
+			});
+		}
+		dview.add(scrlView);
+		var imgDelete = Ti.UI.createImageView({
+			top : 5,
+			right : 5,
+			width : 30,
+			height : 30,
+			image : "/images/close.png",
+			visible : false
+		});
+		imgDelete.addEventListener("click", function(e) {
 			var dialog = Ti.UI.createAlertDialog({
 				title : "Remove",
 				message : "Sure to remove this detail?",
@@ -130,12 +200,34 @@ function addDetails(dic) {
 			});
 			dialog.show();
 		});
-		// scrlView.addEventListener("pinch", function(e) {
-		// Ti.API.info("scale : " + e.scale + " , velocity : " + e.velocity + " , time : " + e.time + " , timeDelta : " + e.timeDelta + " , currentSpan : " + e.currentSpan + " , currentSpanX : " + e.currentSpanX + " , currentSpanY : " + e.currentSpanY + " , previousSpan : " + e.previousSpan + " , previousSpanX : " + e.previousSpanX + " , previousSpanY : " + e.previousSpanY + " , focusX : " + e.focusX + " , focusY : " + e.focusY);
-		// });
-		scrlView.add(img);
+		dview.add(imgDelete);
+
+		var imgRotate = Ti.UI.createImageView({
+			top : 5,
+			right : 40,
+			width : 30,
+			height : 30,
+			image : "/images/rotate.png",
+			visible : false
+		});
+		imgRotate.addEventListener("click", function(e) {
+			var matrix = Ti.UI.create2DMatrix({
+				rotate : rotate
+			});
+			var a1 = Ti.UI.createAnimation();
+			a1.transform = matrix;
+			a1.duration = 100;
+			scrlView.animate(a1, function() {
+				scrlView.width = Ti.UI.FILL;
+				scrlView.height = Ti.UI.FILL;
+				scrlView.rotate = rotate;
+				rotate += 90;
+			});
+		});
+		dview.add(imgRotate);
+
 		dview.zIndex = -5555;
-		dview.add(scrlView);
+
 	}
 	var btnDelete = Ti.UI.createButton({
 		top : 0,
@@ -216,6 +308,7 @@ function action(e) {
 	$.viewBackColor.visible = false;
 	$.viewText.visible = false;
 	$.viewImages.visible = false;
+	$.viewPrint.visible = false;
 
 	switch(e.source.index) {
 	case 0:
@@ -226,6 +319,10 @@ function action(e) {
 		break;
 	case 2 :
 		$.viewImages.visible = true;
+		break;
+	case 3 :
+		$.imgPreview.image = $.card.toImage();
+		$.viewPrint.visible = true;
 		break;
 	}
 	e.source.backgroundColor = "#B1B1B1";
@@ -319,7 +416,7 @@ function addText() {
 			text : $.txtText.value,
 			font : {
 				fontFamily : fName,
-				fontSize : parseInt($.txtFontSize.value)
+				fontSize : parseInt($.lblFontSize.text)
 			},
 			color : color,
 			_param : {
@@ -332,7 +429,7 @@ function addText() {
 		selectedLbl.text = $.txtText.value;
 		selectedLbl.font = {
 			fontFamily : fName,
-			fontSize : parseInt($.txtFontSize.value)
+			fontSize : parseInt($.lblFontSize.text)
 		};
 		selectedLbl.color = color;
 
@@ -340,6 +437,7 @@ function addText() {
 			fontIndex : font.index,
 			styleIndex : font.styleIndex
 		};
+		hideTools();
 	}
 
 }
@@ -415,13 +513,13 @@ function saveCard() {
 			dic[i.toString()].font = v.children[0].font;
 			dic[i.toString()]._param = v.children[0]._param;
 		} else {
-
+			dic[i.toString()].rotate = v.children[0].rotate;
 			dic[i.toString()].zoomScale = v.children[0].zoomScale;
 			dic[i.toString()].imgIndex = v.children[0].children[0].imgIndex.toString();
 			dic[i.toString()].image = Ti.Filesystem.getFile(subDir.nativePath, v.children[0].children[0].imgIndex.toString() + ".jpg").nativePath;
 		}
 	}
-	Ti.API.info(JSON.stringify(dic));
+	// Ti.API.info(JSON.stringify(dic));
 	Alloy.Globals.db.open();
 	Alloy.Globals.db.addCard(folder, JSON.stringify(dic));
 	Alloy.Globals.db.close();

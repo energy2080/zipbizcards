@@ -16,7 +16,7 @@
 	     title : "Add Image",
 	     borderRadius : 5
 }
-"#txtFontSize" :{
+"#lblFontSize" :{
 	 left:"80%",
 	  right:0,
 	   height:"100%",
