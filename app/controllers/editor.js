@@ -120,11 +120,11 @@ function addDetails(dic) {
 			height : Ti.UI.SIZE,
 			imgIndex : dic.imgIndex ? dic.imgIndex : $.scrlImages.children.length - 1
 		});
-		if (args.details) {
-			img.image = Ti.Filesystem.getFile(dic.image).read();
-		} else {
-			img.image = dic.image;
-		}
+		// if (args.details) {
+		// img.image = Ti.Filesystem.getFile(dic.image).read();
+		// } else {
+		img.image = dic.image;
+		// }
 		// img.addEventListener('pinch', function(e) {
 		//
 		// img.height = baseHeight * e.scale;
@@ -195,7 +195,7 @@ function addDetails(dic) {
 			});
 			dialog.addEventListener('click', function(e) {
 				if (e.index) {
-					dview.remove(scrlView);
+					$.card.remove(dview);
 				}
 			});
 			dialog.show();
@@ -357,44 +357,15 @@ function openGallery() {
 	});
 }
 
-function openCamera() {
-	Titanium.Media.showCamera({
-
-		success : function(e) {
-			// alert(JSON.stringify(e));
-			add(e.media);
-		},
-		cancel : function() {
-
-		},
-		error : function(error) {
-			// create alert
-			var a = Titanium.UI.createAlertDialog({
-				title : 'Camera'
-			});
-
-			// set message
-			if (error.code == Titanium.Media.NO_CAMERA) {
-				a.setMessage('Device does not have camera.');
-			}
-			// show alert
-			a.show();
-		},
-		allowEditing : true
-	});
-}
-
 function addImage() {
 	var dialog = Ti.UI.createOptionDialog({
-		cancel : 2,
-		options : ['Choose Photo', 'Take Photo', 'Cancel'],
+		cancel : 1,
+		options : ['Choose Photo', 'Cancel'],
 		destructive : 0
 	});
 	dialog.addEventListener("click", function(e) {
 		if (e.index == 0) {
 			openGallery();
-		} else if (e.index == 1) {
-			openCamera();
 		}
 	});
 	dialog.show();
