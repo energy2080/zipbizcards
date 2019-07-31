@@ -36,7 +36,7 @@ function showFontSize(e) {
 		});
 		dialogSize.addEventListener('click', function(e) {
 			if (e.index != (size.length - 1)) {
-				$.lblFontSize.text = size[e.index];
+				$.lblFontSize.text = size[e.index + 1];
 			}
 
 		});
