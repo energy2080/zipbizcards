@@ -4,6 +4,7 @@ var args = $.args,
     details,
     baseHeight,
     baseWidth,
+    isSaved = false,
     font = {
 	index : 0,
 	title : Alloy.Globals.fonts[0].title,
@@ -105,10 +106,37 @@ function addDetails(dic) {
 			}
 		});
 		dview.add(lbl);
+		var btnDelete = Ti.UI.createButton({
+			top : 0,
+			right : 0,
+			width : 15,
+			height : 15,
+			backgroundImage : "/images/close.png",
+			visible : false
+		});
+		btnDelete.addEventListener('click', function(e) {
+			var dialog = Ti.UI.createAlertDialog({
+				title : "Remove",
+				message : "Sure to remove this detail?",
+				buttonNames : ["No", "Yes"]
+			});
+			dialog.addEventListener('click', function(e) {
+				if (e.index) {
+					$.card.remove(dview);
+					$.txtText.value = "";
+					$.btnAdd.title = "ADD";
+					isSaved = false;
+				}
+			});
+			dialog.show();
+
+		});
+
+		dview.add(btnDelete);
 	} else {
 		var scrlView = Ti.UI.createScrollView({
-			width : Ti.UI.FILL,
-			height : Ti.UI.FILL,
+			width : Ti.UI.SIZE,
+			height : Ti.UI.SIZE,
 			contentWidth : Ti.UI.SIZE,
 			contentHeight : Ti.UI.SIZE,
 			minZoomScale : 0.1,
@@ -118,6 +146,7 @@ function addDetails(dic) {
 		var img = Ti.UI.createImageView({
 			width : Ti.UI.SIZE,
 			height : Ti.UI.SIZE,
+			bubbleParent : false,
 			imgIndex : dic.imgIndex ? dic.imgIndex : $.scrlImages.children.length - 1
 		});
 		// if (args.details) {
@@ -142,6 +171,7 @@ function addDetails(dic) {
 		//
 		// });
 		img.addEventListener("click", function() {
+			Ti.API.info("img : " + imgDelete.visible);
 			if (imgDelete.visible) {
 				imgDelete.visible = false;
 				imgRotate.visible = false;
@@ -182,8 +212,8 @@ function addDetails(dic) {
 		var imgDelete = Ti.UI.createImageView({
 			top : 5,
 			right : 5,
-			width : 30,
-			height : 30,
+			width : "12%",
+			height : Ti.UI.SIZE,
 			image : "/images/close.png",
 			visible : false
 		});
@@ -196,17 +226,18 @@ function addDetails(dic) {
 			dialog.addEventListener('click', function(e) {
 				if (e.index) {
 					$.card.remove(dview);
+					isSaved = false;
 				}
 			});
 			dialog.show();
 		});
-		dview.add(imgDelete);
+		scrlView.add(imgDelete);
 
 		var imgRotate = Ti.UI.createImageView({
 			top : 5,
-			right : 40,
-			width : 30,
-			height : 30,
+			right : "13%",
+			width : "12%",
+			height : Ti.UI.SIZE,
 			image : "/images/rotate.png",
 			visible : false
 		});
@@ -222,40 +253,34 @@ function addDetails(dic) {
 				scrlView.height = Ti.UI.FILL;
 				scrlView.rotate = rotate;
 				rotate += 90;
+				isSaved = false;
 			});
 		});
-		dview.add(imgRotate);
+		scrlView.add(imgRotate);
+
+		// scrlView.addEventListener("click", function(e) {
+		// Ti.API.info("scrollview");
+		// if (imgDelete.visible) {
+		// imgDelete.visible = false;
+		// imgRotate.visible = false;
+		// } else {
+		// imgDelete.visible = true;
+		// imgRotate.visible = true;
+		// }
+		// });
+		//
+		// dview.addEventListener("click", function(e) {
+		// Ti.API.info("dview");
+		// imgDelete.visible = false;
+		// imgRotate.visible = false;
+		// });
 
 		dview.zIndex = -5555;
 
 	}
-	var btnDelete = Ti.UI.createButton({
-		top : 0,
-		right : 0,
-		width : 15,
-		height : 15,
-		backgroundImage : "/images/close.png",
-		visible : false
-	});
-	btnDelete.addEventListener('click', function(e) {
-		var dialog = Ti.UI.createAlertDialog({
-			title : "Remove",
-			message : "Sure to remove this detail?",
-			buttonNames : ["No", "Yes"]
-		});
-		dialog.addEventListener('click', function(e) {
-			if (e.index) {
-				$.card.remove(dview);
-				$.txtText.value = "";
-				$.btnAdd.title = "ADD";
-			}
-		});
-		dialog.show();
 
-	});
-
-	dview.add(btnDelete);
 	$.card.add(dview);
+	isSaved = false;
 }
 
 function add(photo) {
@@ -273,6 +298,7 @@ function add(photo) {
 		});
 	});
 	$.scrlImages.add(img);
+	isSaved = false;
 }
 
 if (args.details) {
@@ -299,6 +325,7 @@ if (args.details) {
 	for (var i = 0; i < imgs.length; i++) {
 		add(Ti.Filesystem.getFile(subDir.nativePath, imgs[i]).read());
 	}
+	isSaved = true;
 }
 
 function action(e) {
@@ -321,6 +348,15 @@ function action(e) {
 		$.viewImages.visible = true;
 		break;
 	case 3 :
+		for (var i = 0; i < $.card.children.length; i++) {
+			var v = $.card.children[i];
+			if (v.children[0].text) {
+				v.children[1].visible = false;
+			} else {
+				v.children[0].children[1].visible = false;
+				v.children[0].children[2].visible = false;
+			}
+		}
 		$.imgPreview.image = $.card.toImage();
 		$.viewPrint.visible = true;
 		break;
@@ -341,6 +377,10 @@ function hideTools() {
 	$.txtText.value = "";
 
 	// Ti.API.info("Scale : " + $.card.children[0].children[0].zoomScale + " , contentOffset : " + $.card.children[0].children[0].children[0].left + " , " + $.card.children[0].children[0].children[0].top);
+}
+
+function hideButtons() {
+	Ti.API.info("##################");
 }
 
 function openGallery() {
@@ -408,8 +448,9 @@ function addText() {
 			fontIndex : font.index,
 			styleIndex : font.styleIndex
 		};
-		hideTools();
+
 	}
+	hideTools();
 
 }
 
@@ -450,7 +491,7 @@ function showFont() {
 
 }
 
-function saveCard() {
+function saveCard(cb) {
 
 	if (!folder) {
 		folder = new Date().getTime();
@@ -506,6 +547,8 @@ function saveCard() {
 		}
 	}
 
+	isSaved = true;
+	cb && cb();
 }
 
 $.backPicker.setCallback({
@@ -517,6 +560,24 @@ $.textPicker.setCallback({
 });
 function close() {
 	// Alloy.Globals.crux.close();
+	if (!isSaved) {
+		var dialog = Ti.UI.createAlertDialog({
+			title : "Save Changes",
+			message : "Do you want to save changes?",
+			buttonNames : ["Save", "Cancel"]
+		});
+		dialog.addEventListener('click', function(e) {
+			if (e.index == 0) {
+				saveCard(function() {
+					$.win.close();
+				});
+			} else {
+				$.win.close();
+			}
+		});
+		dialog.show();
+		return;
+	}
 	$.win.close();
 }
 

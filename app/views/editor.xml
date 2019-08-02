@@ -21,7 +21,7 @@
 			<Button id="btnClose" top="5" onClick="close" color="red" >CLOSE</Button>
 		</View>
 		<View id="viewCard" left="12%" width="Ti.UI.FILL" height="Ti.UI.SIZE">
-			<View id="card" width="95%" height="95%" backgroundColor="#fff"></View>
+			<View id="card" width="95%" height="95%" backgroundColor="#fff" onClick="hideButtons"></View>
 		</View>
 		<View id="viewTools" width="Ti.UI.FILL" height="Ti.UI.FILL" backgroundColor="#80000000" visible="false">
 			<View id="viewBackColor" width="40%" height="60%" backgroundColor="#C5C5C5" visible="false">
@@ -38,7 +38,7 @@
 							<Label id="lblFontName" left="5" color="#fff" class="smallText" touchEnabled="false">Arial</Label>
 							<Label right="5" color="#fff" class="smallText" text="˅" touchEnabled="false"></Label>
 						</View>
-						<Label id="lblFontSize" onClick="showFontSize">11</Label>
+						<Label id="lblFontSize" onClick="showFontSize">40</Label>
 					</View>
 					<View top="5" left="5" right="5" height="25">
 						<View left="0" width="75%" backgroundColor="#454545" borderRadius="5" onClick="showStyle">
