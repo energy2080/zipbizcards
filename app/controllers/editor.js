@@ -348,15 +348,7 @@ function action(e) {
 		$.viewImages.visible = true;
 		break;
 	case 3 :
-		for (var i = 0; i < $.card.children.length; i++) {
-			var v = $.card.children[i];
-			if (v.children[0].text) {
-				v.children[1].visible = false;
-			} else {
-				v.children[0].children[1].visible = false;
-				v.children[0].children[2].visible = false;
-			}
-		}
+		hideButtons();
 		$.imgPreview.image = $.card.toImage();
 		$.viewPrint.visible = true;
 		break;
@@ -381,6 +373,15 @@ function hideTools() {
 
 function hideButtons() {
 	Ti.API.info("##################");
+	for (var i = 0; i < $.card.children.length; i++) {
+		var v = $.card.children[i];
+		if (v.children[0].text) {
+			v.children[1].visible = false;
+		} else {
+			v.children[0].children[1].visible = false;
+			v.children[0].children[2].visible = false;
+		}
+	}
 }
 
 function openGallery() {
@@ -414,11 +415,13 @@ function addImage() {
 function setTextColor(hex) {
 	color = hex;
 	$.viewFontColor.backgroundColor = color;
+	isSaved = false;
 	Ti.API.info("Color : " + color);
 }
 
 function setBackColor(color) {
 	$.card.backgroundColor = color;
+	isSaved = false;
 }
 
 function addText() {
@@ -492,7 +495,7 @@ function showFont() {
 }
 
 function saveCard(cb) {
-
+	hideButtons();
 	if (!folder) {
 		folder = new Date().getTime();
 		dir = Ti.Filesystem.getFile(Ti.Filesystem.applicationSupportDirectory, folder);
@@ -548,7 +551,7 @@ function saveCard(cb) {
 	}
 
 	isSaved = true;
-	cb && cb();
+	cb instanceof Function && cb();
 }
 
 $.backPicker.setCallback({
