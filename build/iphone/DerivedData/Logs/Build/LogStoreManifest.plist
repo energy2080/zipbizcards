@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>9</integer>
+	<key>logs</key>
+	<dict>
+		<key>A5121F53-9286-4BDA-9A0F-2015E6956A2A</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>A5121F53-9286-4BDA-9A0F-2015E6956A2A.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>zipbizcards project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>zipbizcards</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project zipbizcards with scheme zipbizcards and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>588120237.75796902</real>
+			<key>timeStoppedRecording</key>
+			<real>588120239.86330998</real>
+			<key>title</key>
+			<string>Building project zipbizcards with scheme zipbizcards and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>A5121F53-9286-4BDA-9A0F-2015E6956A2A</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,7 @@
+// this is a generated file - DO NOT EDIT
+
+TI_DRAGGABLE_OTHER_LDFLAGS=$(inherited) -framework Foundation
+DK_NAPP_DRAWER_TI_MODULE_VERSION=2.1.1
+DK_NAPP_DRAWER_OTHER_LDFLAGS=$(inherited) -framework QuartzCore
+OTHER_LDFLAGS=$(inherited) $(TI_DRAGGABLE_OTHER_LDFLAGS) $(DK_NAPP_DRAWER_OTHER_LDFLAGS) 
+TI_MODULE_VERSION=$(inherited) $(DK_NAPP_DRAWER_TI_MODULE_VERSION) 

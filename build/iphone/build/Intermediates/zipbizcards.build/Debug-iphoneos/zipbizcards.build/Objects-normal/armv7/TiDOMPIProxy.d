@@ -1,0 +1,19 @@
+dependencies: \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/usr/include/libxml2/module.modulemap \
+  /Users/G/sandbox/zipbizcards/build/iphone/Classes/ThirdpartyNS.h \
+  /Users/G/sandbox/zipbizcards/build/iphone/Classes/defines.h \
+  /Users/G/sandbox/zipbizcards/build/iphone/zipbizcards_Prefix.pch \
+  /Users/G/sandbox/zipbizcards/build/iphone/Classes/TiDOMPIProxy.m \
+  /Users/G/sandbox/zipbizcards/build/iphone/Classes/TiDOMPIProxy.h \
+  /Users/G/sandbox/zipbizcards/build/iphone/Classes/TiDOMNodeProxy.h \
+  /Users/G/sandbox/zipbizcards/build/iphone/Classes/GDataXMLNode.h \
+  /Users/G/sandbox/zipbizcards/build/iphone/Classes/TiProxy.h \
+  /Users/G/sandbox/zipbizcards/build/iphone/Classes/KrollCallback.h \
+  /Users/G/sandbox/zipbizcards/build/iphone/Classes/KrollContext.h \
+  /Users/G/sandbox/zipbizcards/build/iphone/Classes/TiToJS.h \
+  /Users/G/sandbox/zipbizcards/build/iphone/Classes/KrollObject.h \
+  /Users/G/sandbox/zipbizcards/build/iphone/Classes/TiBindingRunLoop.h \
+  /Users/G/sandbox/zipbizcards/build/iphone/Classes/TiEvaluator.h \
+  /Users/G/sandbox/zipbizcards/build/iphone/Classes/TiBase.h \
+  /Users/G/sandbox/zipbizcards/build/iphone/Classes/TiThreading.h \
+  /Users/G/sandbox/zipbizcards/build/iphone/Classes/TiPublicAPI.h

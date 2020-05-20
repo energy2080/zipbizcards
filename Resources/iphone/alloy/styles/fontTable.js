@@ -1,0 +1,1 @@
+module.exports = [{"isId":true,"priority":100000.0013,"key":"tbl","style":{width:"200",height:Ti.UI.SIZE,separatorColor:"#B38dded4",backgroundColor:"#fff",}}];

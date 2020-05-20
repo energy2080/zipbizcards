@@ -1,0 +1,3 @@
+exports.createWindow=function(args){
+return Ti.UI[!0?'createWindow':'createView'](args);
+};

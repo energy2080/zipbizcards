@@ -1,0 +1,639 @@
+
+2019-8-21 18:45:08
+
+Operating System
+  Name                        = Mac OS X
+  Version                     = 10.14
+  Architecture                = 64bit
+  # CPUs                      = 8
+  Memory                      = 17179869184
+
+Node.js
+  Node.js Version             = 8.9.1
+  npm Version                 = 5.5.1
+
+Titanium CLI
+  CLI Version                 = 5.1.1
+
+Titanium SDK
+  SDK Version                 = 7.4.1.GA
+  SDK Path                    = /Users/G/Library/Application Support/Titanium/mobilesdk/osx/7.4.1.GA
+  Target Platform             = iphone
+
+Command
+  /usr/local/bin/node /Users/G/.appcelerator/install/7.0.7/package/node_modules/titanium/lib/titanium.js build --platform ios --log-level trace --sdk 7.4.1.GA --project-dir /Users/G/sandbox/zipbizcards --target device --ios-version 12.1 --device-family universal --developer-name Gary Richard (VC8VV46SKD) --device-id 8b988cb5dd1b59cbb290dbba4f30ed0d42ec672b --pp-uuid ff5eab10-f544-4c88-9d00-99da3ec0f654 --no-colors --no-progress-bars --no-prompt --prompt-type socket-bundle --prompt-port 49224 --config-file /var/folders/2g/ldzgdwk53qq_k37xz0m9qhk80000gn/T/build-1566427505115.json --no-banner --project-dir /Users/G/sandbox/zipbizcards
+
+[DEBUG]  Detecting modules in /Users/G/sandbox/zipbizcards/modules
+[DEBUG]  Detected iphone module: dk.napp.drawer 2.1.1 @ /Users/G/sandbox/zipbizcards/modules/iphone/dk.napp.drawer/2.1.1
+[DEBUG]  Detected iphone module: ti.draggable 2.0.3 @ /Users/G/sandbox/zipbizcards/modules/iphone/ti.draggable/2.0.3
+[DEBUG]  Detected iphone module: ti.draggable 2.0.4 @ /Users/G/sandbox/zipbizcards/modules/iphone/ti.draggable/2.0.4
+[DEBUG]  Detecting modules in /Users/G/Library/Application Support/Titanium/modules
+[DEBUG]  Detected android module: facebook 5.0.0 @ /Users/G/Library/Application Support/Titanium/modules/android/facebook/5.0.0
+[DEBUG]  Detected android module: facebook 5.2.0 @ /Users/G/Library/Application Support/Titanium/modules/android/facebook/5.2.0
+[DEBUG]  Detected android module: facebook 6.0.1 @ /Users/G/Library/Application Support/Titanium/modules/android/facebook/6.0.1
+[DEBUG]  Detected android module: facebook 6.1.0 @ /Users/G/Library/Application Support/Titanium/modules/android/facebook/6.1.0
+[DEBUG]  Detected android module: facebook 6.2.0 @ /Users/G/Library/Application Support/Titanium/modules/android/facebook/6.2.0
+[DEBUG]  Detected android module: facebook 7.0.0 @ /Users/G/Library/Application Support/Titanium/modules/android/facebook/7.0.0
+[DEBUG]  Detected android module: facebook 7.1.0 @ /Users/G/Library/Application Support/Titanium/modules/android/facebook/7.1.0
+[DEBUG]  Detected android module: facebook 7.2.0 @ /Users/G/Library/Application Support/Titanium/modules/android/facebook/7.2.0
+[DEBUG]  Detected android module: firebase.cloudmessaging 2.0.1 @ /Users/G/Library/Application Support/Titanium/modules/android/firebase.cloudmessaging/2.0.1
+[DEBUG]  Detected android module: firebase.core 5.0.0 @ /Users/G/Library/Application Support/Titanium/modules/android/firebase.core/5.0.0
+[DEBUG]  Detected android module: hyperloop 1.2.8 @ /Users/G/Library/Application Support/Titanium/modules/android/hyperloop/1.2.8
+[DEBUG]  Detected android module: hyperloop 2.0.0 @ /Users/G/Library/Application Support/Titanium/modules/android/hyperloop/2.0.0
+[DEBUG]  Detected android module: hyperloop 2.1.1 @ /Users/G/Library/Application Support/Titanium/modules/android/hyperloop/2.1.1
+[DEBUG]  Detected android module: hyperloop 2.1.2 @ /Users/G/Library/Application Support/Titanium/modules/android/hyperloop/2.1.2
+[DEBUG]  Detected android module: hyperloop 2.1.3 @ /Users/G/Library/Application Support/Titanium/modules/android/hyperloop/2.1.3
+[DEBUG]  Detected android module: hyperloop 2.2.1 @ /Users/G/Library/Application Support/Titanium/modules/android/hyperloop/2.2.1
+[DEBUG]  Detected android module: hyperloop 2.2.2 @ /Users/G/Library/Application Support/Titanium/modules/android/hyperloop/2.2.2
+[DEBUG]  Detected android module: hyperloop 2.2.3 @ /Users/G/Library/Application Support/Titanium/modules/android/hyperloop/2.2.3
+[DEBUG]  Detected android module: hyperloop 3.0.1 @ /Users/G/Library/Application Support/Titanium/modules/android/hyperloop/3.0.1
+[DEBUG]  Detected android module: hyperloop 3.0.5 @ /Users/G/Library/Application Support/Titanium/modules/android/hyperloop/3.0.5
+[DEBUG]  Detected android module: hyperloop 3.1.2 @ /Users/G/Library/Application Support/Titanium/modules/android/hyperloop/3.1.2
+[DEBUG]  Detected android module: hyperloop 3.1.3 @ /Users/G/Library/Application Support/Titanium/modules/android/hyperloop/3.1.3
+[DEBUG]  Detected android module: ti.barcode 4.0.3 @ /Users/G/Library/Application Support/Titanium/modules/android/ti.barcode/4.0.3
+[DEBUG]  Detected android module: ti.cloudpush 3.4.1 @ /Users/G/Library/Application Support/Titanium/modules/android/ti.cloudpush/3.4.1
+[DEBUG]  Detected android module: ti.cloudpush 4.0.3 @ /Users/G/Library/Application Support/Titanium/modules/android/ti.cloudpush/4.0.3
+[DEBUG]  Detected android module: ti.cloudpush 4.0.4 @ /Users/G/Library/Application Support/Titanium/modules/android/ti.cloudpush/4.0.4
+[DEBUG]  Detected android module: ti.cloudpush 5.0.0 @ /Users/G/Library/Application Support/Titanium/modules/android/ti.cloudpush/5.0.0
+[DEBUG]  Detected android module: ti.cloudpush 5.1.0 @ /Users/G/Library/Application Support/Titanium/modules/android/ti.cloudpush/5.1.0
+[DEBUG]  Detected android module: ti.cloudpush 5.1.3 @ /Users/G/Library/Application Support/Titanium/modules/android/ti.cloudpush/5.1.3
+[DEBUG]  Detected android module: ti.cloudpush 5.2.1 @ /Users/G/Library/Application Support/Titanium/modules/android/ti.cloudpush/5.2.1
+[DEBUG]  Detected android module: ti.identity 1.0.0 @ /Users/G/Library/Application Support/Titanium/modules/android/ti.identity/1.0.0
+[DEBUG]  Detected android module: ti.identity 2.1.0 @ /Users/G/Library/Application Support/Titanium/modules/android/ti.identity/2.1.0
+[DEBUG]  Detected android module: ti.map 2.3.10 @ /Users/G/Library/Application Support/Titanium/modules/android/ti.map/2.3.10
+[DEBUG]  Detected android module: ti.map 2.3.6 @ /Users/G/Library/Application Support/Titanium/modules/android/ti.map/2.3.6
+[DEBUG]  Detected android module: ti.map 3.0.1 @ /Users/G/Library/Application Support/Titanium/modules/android/ti.map/3.0.1
+[DEBUG]  Detected android module: ti.map 3.3.1 @ /Users/G/Library/Application Support/Titanium/modules/android/ti.map/3.3.1
+[DEBUG]  Detected android module: ti.map 4.0.0 @ /Users/G/Library/Application Support/Titanium/modules/android/ti.map/4.0.0
+[DEBUG]  Detected android module: ti.map 4.1.1 @ /Users/G/Library/Application Support/Titanium/modules/android/ti.map/4.1.1
+[DEBUG]  Detected android module: ti.map 4.2.0 @ /Users/G/Library/Application Support/Titanium/modules/android/ti.map/4.2.0
+[DEBUG]  Detected android module: ti.playservices 11.0.40 @ /Users/G/Library/Application Support/Titanium/modules/android/ti.playservices/11.0.40
+[DEBUG]  Detected android module: ti.playservices 16.1.2 @ /Users/G/Library/Application Support/Titanium/modules/android/ti.playservices/16.1.2
+[DEBUG]  Detected android module: ti.touchid 1.0.0 @ /Users/G/Library/Application Support/Titanium/modules/android/ti.touchid/1.0.0
+[DEBUG]  Detected android module: ti.touchid 2.0.1 @ /Users/G/Library/Application Support/Titanium/modules/android/ti.touchid/2.0.1
+[DEBUG]  Detected android module: ti.touchid 2.1.0 @ /Users/G/Library/Application Support/Titanium/modules/android/ti.touchid/2.1.0
+[DEBUG]  Detected android module: ti.touchid 2.2.0 @ /Users/G/Library/Application Support/Titanium/modules/android/ti.touchid/2.2.0
+[DEBUG]  Detected android module: ti.touchid 3.0.0 @ /Users/G/Library/Application Support/Titanium/modules/android/ti.touchid/3.0.0
+[DEBUG]  Detected android module: ti.touchid 3.0.1 @ /Users/G/Library/Application Support/Titanium/modules/android/ti.touchid/3.0.1
+[DEBUG]  Detected commonjs module: ti.cloud 3.2.10 @ /Users/G/Library/Application Support/Titanium/modules/commonjs/ti.cloud/3.2.10
+[DEBUG]  Detected commonjs module: ti.cloud 3.2.11 @ /Users/G/Library/Application Support/Titanium/modules/commonjs/ti.cloud/3.2.11
+[DEBUG]  Detected iphone module: com.appcelerator.urlSession 2.0.0 @ /Users/G/Library/Application Support/Titanium/modules/iphone/com.appcelerator.urlSession/2.0.0
+[DEBUG]  Detected iphone module: com.appcelerator.urlSession 2.1.0 @ /Users/G/Library/Application Support/Titanium/modules/iphone/com.appcelerator.urlSession/2.1.0
+[DEBUG]  Detected iphone module: dk.napp.social 1.8 @ /Users/G/Library/Application Support/Titanium/modules/iphone/dk.napp.social/1.8
+[DEBUG]  Detected iphone module: facebook 5.0.1 @ /Users/G/Library/Application Support/Titanium/modules/iphone/facebook/5.0.1
+[DEBUG]  Detected iphone module: facebook 5.2.0 @ /Users/G/Library/Application Support/Titanium/modules/iphone/facebook/5.2.0
+[DEBUG]  Detected iphone module: facebook 5.2.8 @ /Users/G/Library/Application Support/Titanium/modules/iphone/facebook/5.2.8
+[DEBUG]  Detected iphone module: facebook 5.2.9 @ /Users/G/Library/Application Support/Titanium/modules/iphone/facebook/5.2.9
+[DEBUG]  Detected iphone module: facebook 5.4.0 @ /Users/G/Library/Application Support/Titanium/modules/iphone/facebook/5.4.0
+[DEBUG]  Detected iphone module: facebook 5.6.0 @ /Users/G/Library/Application Support/Titanium/modules/iphone/facebook/5.6.0
+[DEBUG]  Detected iphone module: facebook 5.7.0 @ /Users/G/Library/Application Support/Titanium/modules/iphone/facebook/5.7.0
+[DEBUG]  Detected iphone module: facebook 5.8.0 @ /Users/G/Library/Application Support/Titanium/modules/iphone/facebook/5.8.0
+[DEBUG]  Detected iphone module: hyperloop 1.2.8 @ /Users/G/Library/Application Support/Titanium/modules/iphone/hyperloop/1.2.8
+[DEBUG]  Detected iphone module: hyperloop 2.0.0 @ /Users/G/Library/Application Support/Titanium/modules/iphone/hyperloop/2.0.0
+[DEBUG]  Detected iphone module: hyperloop 2.1.1 @ /Users/G/Library/Application Support/Titanium/modules/iphone/hyperloop/2.1.1
+[DEBUG]  Detected iphone module: hyperloop 2.1.2 @ /Users/G/Library/Application Support/Titanium/modules/iphone/hyperloop/2.1.2
+[DEBUG]  Detected iphone module: hyperloop 2.1.3 @ /Users/G/Library/Application Support/Titanium/modules/iphone/hyperloop/2.1.3
+[DEBUG]  Detected iphone module: hyperloop 2.2.1 @ /Users/G/Library/Application Support/Titanium/modules/iphone/hyperloop/2.2.1
+[DEBUG]  Detected iphone module: hyperloop 2.2.2 @ /Users/G/Library/Application Support/Titanium/modules/iphone/hyperloop/2.2.2
+[DEBUG]  Detected iphone module: hyperloop 2.2.3 @ /Users/G/Library/Application Support/Titanium/modules/iphone/hyperloop/2.2.3
+[DEBUG]  Detected iphone module: hyperloop 3.0.1 @ /Users/G/Library/Application Support/Titanium/modules/iphone/hyperloop/3.0.1
+[DEBUG]  Detected iphone module: hyperloop 3.0.5 @ /Users/G/Library/Application Support/Titanium/modules/iphone/hyperloop/3.0.5
+[DEBUG]  Detected iphone module: hyperloop 3.1.2 @ /Users/G/Library/Application Support/Titanium/modules/iphone/hyperloop/3.1.2
+[DEBUG]  Detected iphone module: hyperloop 3.1.3 @ /Users/G/Library/Application Support/Titanium/modules/iphone/hyperloop/3.1.3
+[DEBUG]  Detected iphone module: ti.barcode 2.0.4 @ /Users/G/Library/Application Support/Titanium/modules/iphone/ti.barcode/2.0.4
+[DEBUG]  Detected iphone module: ti.coremotion 2.0.0 @ /Users/G/Library/Application Support/Titanium/modules/iphone/ti.coremotion/2.0.0
+[DEBUG]  Detected iphone module: ti.coremotion 2.0.1 @ /Users/G/Library/Application Support/Titanium/modules/iphone/ti.coremotion/2.0.1
+[DEBUG]  Detected iphone module: ti.googlemaps 4.0.0 @ /Users/G/Library/Application Support/Titanium/modules/iphone/ti.googlemaps/4.0.0
+[DEBUG]  Detected iphone module: ti.googlemaps 4.2.0 @ /Users/G/Library/Application Support/Titanium/modules/iphone/ti.googlemaps/4.2.0
+[DEBUG]  Detected iphone module: ti.identity 1.0.1 @ /Users/G/Library/Application Support/Titanium/modules/iphone/ti.identity/1.0.1
+[DEBUG]  Detected iphone module: ti.identity 1.0.3 @ /Users/G/Library/Application Support/Titanium/modules/iphone/ti.identity/1.0.3
+[DEBUG]  Detected iphone module: ti.identity 1.0.5 @ /Users/G/Library/Application Support/Titanium/modules/iphone/ti.identity/1.0.5
+[DEBUG]  Detected iphone module: ti.map 2.12.3 @ /Users/G/Library/Application Support/Titanium/modules/iphone/ti.map/2.12.3
+[DEBUG]  Detected iphone module: ti.map 2.5.1 @ /Users/G/Library/Application Support/Titanium/modules/iphone/ti.map/2.5.1
+[DEBUG]  Detected iphone module: ti.map 2.5.2 @ /Users/G/Library/Application Support/Titanium/modules/iphone/ti.map/2.5.2
+[DEBUG]  Detected iphone module: ti.map 2.7.1 @ /Users/G/Library/Application Support/Titanium/modules/iphone/ti.map/2.7.1
+[DEBUG]  Detected iphone module: ti.map 2.8.0 @ /Users/G/Library/Application Support/Titanium/modules/iphone/ti.map/2.8.0
+[DEBUG]  Detected iphone module: ti.map 2.9.0 @ /Users/G/Library/Application Support/Titanium/modules/iphone/ti.map/2.9.0
+[DEBUG]  Detected iphone module: ti.map 3.0.1 @ /Users/G/Library/Application Support/Titanium/modules/iphone/ti.map/3.0.1
+[DEBUG]  Detected iphone module: ti.map 3.0.2 @ /Users/G/Library/Application Support/Titanium/modules/iphone/ti.map/3.0.2
+[DEBUG]  Detected iphone module: ti.map 3.1.0 @ /Users/G/Library/Application Support/Titanium/modules/iphone/ti.map/3.1.0
+[DEBUG]  Detected iphone module: ti.safaridialog 1.0.5 @ /Users/G/Library/Application Support/Titanium/modules/iphone/ti.safaridialog/1.0.5
+[DEBUG]  Detected iphone module: ti.safaridialog 1.1.1 @ /Users/G/Library/Application Support/Titanium/modules/iphone/ti.safaridialog/1.1.1
+[DEBUG]  Detected iphone module: ti.touchid 1.2.0 @ /Users/G/Library/Application Support/Titanium/modules/iphone/ti.touchid/1.2.0
+[DEBUG]  Detected iphone module: ti.touchid 1.2.2 @ /Users/G/Library/Application Support/Titanium/modules/iphone/ti.touchid/1.2.2
+[DEBUG]  Detected iphone module: ti.touchid 2.1.2 @ /Users/G/Library/Application Support/Titanium/modules/iphone/ti.touchid/2.1.2
+[DEBUG]  Detected iphone module: ti.touchid 2.1.4 @ /Users/G/Library/Application Support/Titanium/modules/iphone/ti.touchid/2.1.4
+[DEBUG]  Detected windows module: hyperloop 2.1.1 @ /Users/G/Library/Application Support/Titanium/modules/windows/hyperloop/2.1.1
+[DEBUG]  Detected windows module: hyperloop 2.1.2 @ /Users/G/Library/Application Support/Titanium/modules/windows/hyperloop/2.1.2
+[DEBUG]  Detected windows module: hyperloop 2.1.3 @ /Users/G/Library/Application Support/Titanium/modules/windows/hyperloop/2.1.3
+[DEBUG]  Detected windows module: hyperloop 2.2.1 @ /Users/G/Library/Application Support/Titanium/modules/windows/hyperloop/2.2.1
+[DEBUG]  Detected windows module: hyperloop 2.2.2 @ /Users/G/Library/Application Support/Titanium/modules/windows/hyperloop/2.2.2
+[DEBUG]  Detected windows module: hyperloop 2.2.3 @ /Users/G/Library/Application Support/Titanium/modules/windows/hyperloop/2.2.3
+[DEBUG]  Detected windows module: hyperloop 3.0.1 @ /Users/G/Library/Application Support/Titanium/modules/windows/hyperloop/3.0.1
+[DEBUG]  Detected windows module: hyperloop 3.0.5 @ /Users/G/Library/Application Support/Titanium/modules/windows/hyperloop/3.0.5
+[DEBUG]  Detected windows module: hyperloop 3.1.2 @ /Users/G/Library/Application Support/Titanium/modules/windows/hyperloop/3.1.2
+[DEBUG]  Detected windows module: hyperloop 3.1.3 @ /Users/G/Library/Application Support/Titanium/modules/windows/hyperloop/3.1.3
+[DEBUG]  Looking for Titanium module id=ti.draggable version=latest platform=iphone deploy-type=test
+[INFO]   Found Titanium module id=ti.draggable version=2.0.4 platform=iphone deploy-type=test path=/Users/G/sandbox/zipbizcards/modules/iphone/ti.draggable/2.0.4
+[DEBUG]  Looking for Titanium module id=dk.napp.drawer version=latest platform=iphone deploy-type=test
+[INFO]   Found Titanium module id=dk.napp.drawer version=2.1.1 platform=iphone deploy-type=test path=/Users/G/sandbox/zipbizcards/modules/iphone/dk.napp.drawer/2.1.1
+[DEBUG]  Detecting plugins in /Users/G/sandbox/zipbizcards/plugins
+[DEBUG]  Detected plugin: ti.alloy @ /Users/G/sandbox/zipbizcards/plugins/ti.alloy
+[DEBUG]  Detecting plugins in /Users/G/Library/Application Support/Titanium/plugins
+[DEBUG]  Detected plugin: hyperloop 1.2.8 @ /Users/G/Library/Application Support/Titanium/plugins/hyperloop/1.2.8
+[DEBUG]  Detected plugin: hyperloop 2.0.0 @ /Users/G/Library/Application Support/Titanium/plugins/hyperloop/2.0.0
+[DEBUG]  Detected plugin: hyperloop 2.1.1 @ /Users/G/Library/Application Support/Titanium/plugins/hyperloop/2.1.1
+[DEBUG]  Detected plugin: hyperloop 2.1.2 @ /Users/G/Library/Application Support/Titanium/plugins/hyperloop/2.1.2
+[DEBUG]  Detected plugin: hyperloop 2.1.3 @ /Users/G/Library/Application Support/Titanium/plugins/hyperloop/2.1.3
+[DEBUG]  Detected plugin: hyperloop 2.2.1 @ /Users/G/Library/Application Support/Titanium/plugins/hyperloop/2.2.1
+[DEBUG]  Detected plugin: hyperloop 2.2.2 @ /Users/G/Library/Application Support/Titanium/plugins/hyperloop/2.2.2
+[DEBUG]  Detected plugin: hyperloop 2.2.3 @ /Users/G/Library/Application Support/Titanium/plugins/hyperloop/2.2.3
+[DEBUG]  Looking for Titanium plugin id=ti.alloy version=1.0
+[INFO]   Found Titanium plugin id=ti.alloy version=1.0 
+[TRACE]  Snapshotting build directory
+[DEBUG]  Titanium SDK iOS directory: /Users/G/Library/Application Support/Titanium/mobilesdk/osx/7.4.1.GA/iphone
+[INFO]   Deploy type: test
+[INFO]   Building for target: device
+[INFO]   Building using iOS SDK: 12.1
+[INFO]   Building for iOS device: 8b988cb5dd1b59cbb290dbba4f30ed0d42ec672b
+[INFO]   Building for device family: universal
+[DEBUG]  Setting Xcode target to Debug
+[DEBUG]  Setting Xcode build OS to iphoneos
+[DEBUG]  Xcode installation: /Applications/Xcode.app/Contents/Developer
+[DEBUG]  iOS WWDR certificate: installed
+[INFO]   iOS Development Certificate: Gary Richard (VC8VV46SKD)
+[INFO]   Team ID: A7985Z3473
+[INFO]   Minimum iOS version: 8.0
+[INFO]   Using default keychain
+[INFO]   Logging enabled on port 13536
+[INFO]   Debugging disabled
+[INFO]   Profiler disabled
+[INFO]   Set to copy files instead of symlinking
+[INFO]   Initializing the build directory
+[INFO]   Found Alloy app in /Users/G/sandbox/zipbizcards/app
+[INFO]   Executing Alloy compile: /usr/local/bin/node /Users/G/.appcelerator/install/7.0.7/package/node_modules/appc-cli-titanium/node_modules/alloy/bin/alloy compile /Users/G/sandbox/zipbizcards/app --config platform=ios,version=0,simtype=none,devicefamily=universal,deploytype=test,target=device --no-colors
+[DEBUG]         .__  .__                
+[DEBUG]  _____  |  | |  |   ____ ___.__.
+[DEBUG]  \__  \ |  | |  |  /  _ <   |  |
+[DEBUG]   / __ \|  |_|  |_(  <_> )___  |
+[DEBUG]  (____  /____/____/\____// ____|
+[DEBUG]       \/                 \/
+[DEBUG]  Alloy 1.12.0 by Appcelerator. The MVC app framework for Titanium.
+[DEBUG]  ----- CONFIGURATION -----
+[DEBUG]  raw config = "platform=ios,version=0,simtype=none,devicefamily=universal,deploytype=test,target=device"
+[DEBUG]  platform = ios
+[DEBUG]  version = 0
+[DEBUG]  simtype = none
+[DEBUG]  devicefamily = universal
+[DEBUG]  deploytype = test
+[DEBUG]  target = device
+[DEBUG]  project path = /Users/G/sandbox/zipbizcards
+[DEBUG]  app path = /Users/G/sandbox/zipbizcards/app
+[DEBUG]  
+[DEBUG]  ----- CONFIG.JSON -----
+[DEBUG]  dependencies = {"nl.fokkezb.drawer":"*"}
+[INFO]   [config.json] config.json unchanged, using cached config.json...
+[DEBUG]  {
+[DEBUG]  "dependencies": {
+[DEBUG]  "nl.fokkezb.drawer": "*"
+[DEBUG]  },
+[DEBUG]  "sourcemap": true,
+[DEBUG]  "autoStyle": false,
+[DEBUG]  "adapters": [
+[DEBUG]  "localStorage",
+[DEBUG]  "properties",
+[DEBUG]  "sql"
+[DEBUG]  ]
+[DEBUG]  }
+[DEBUG]  
+[DEBUG]  ----- CLEANING RESOURCES -----
+[DEBUG]  Removing orphaned controllers ...
+[DEBUG]  Removing orphaned models ...
+[DEBUG]  Removing orphaned styles ...
+[DEBUG]  Removing orphaned sync adapters...
+[DEBUG]  Removing orphaned assets and libs...
+[DEBUG]  
+[DEBUG]  ----- BASE RUNTIME FILES -----
+[TRACE]  SRC_DIR=/Users/G/.appcelerator/install/7.0.7/package/node_modules/appc-cli-titanium/node_modules/alloy/Alloy/lib
+[TRACE]  Copying SRC_DIR/alloy/widget.js --> Resources/iphone/alloy/widget.js
+[TRACE]  Copying SRC_DIR/alloy/underscore.js --> Resources/iphone/alloy/underscore.js
+[TRACE]  Copying SRC_DIR/alloy/sync/sql.js --> Resources/iphone/alloy/sync/sql.js
+[TRACE]  Copying SRC_DIR/alloy/sync/properties.js --> Resources/iphone/alloy/sync/properties.js
+[TRACE]  Copying SRC_DIR/alloy/sync/localStorage.js --> Resources/iphone/alloy/sync/localStorage.js
+[TRACE]  Copying SRC_DIR/alloy/controllers/BaseController.js --> Resources/iphone/alloy/controllers/BaseController.js
+[TRACE]  
+[TRACE]  Generating ../Resources/iphone/alloy.js
+[TRACE]  SRC_DIR=/Users/G/.appcelerator/install/7.0.7/package/node_modules/appc-cli-titanium/node_modules/alloy/Alloy/common
+[TRACE]  Copying SRC_DIR/constants.js --> Resources/iphone/alloy/constants.js
+[TRACE]  
+[TRACE]  SRC_DIR=/Users/G/sandbox/zipbizcards/app/assets
+[TRACE]  
+[TRACE]  SRC_DIR=/Users/G/sandbox/zipbizcards/app/lib
+[TRACE]  Copying SRC_DIR/xp.ui.js --> Resources/iphone/xp.ui.js
+[TRACE]  Copying SRC_DIR/ui.js --> Resources/iphone/ui.js
+[TRACE]  Copying SRC_DIR/db.js --> Resources/iphone/db.js
+[TRACE]  Copying SRC_DIR/crux.js --> Resources/iphone/crux.js
+[TRACE]  
+[DEBUG]  Resetting /Users/G/sandbox/zipbizcards/platform/ios
+[DEBUG]  
+[DEBUG]  Resetting /Users/G/sandbox/zipbizcards/i18n
+[DEBUG]  
+[INFO]   ----- MVC GENERATION -----
+[INFO]   [global style] loading from cache...
+[INFO]   [widget.xml] nl.fokkezb.drawer view processing...
+[INFO]   view:       "widget.xml"
+[INFO]   controller: "widget.js"
+[INFO]   created:    "Resources/iphone/alloy/widgets/nl.fokkezb.drawer/controllers/widget.js"
+[INFO]   created:     "Resources/iphone/alloy/widgets/nl.fokkezb.drawer/styles/widget.js"
+[INFO]   [colorPicker.xml] view processing...
+[INFO]   style:      "colorPicker.tss"
+[INFO]   view:       "colorPicker.xml"
+[INFO]   controller: "colorPicker.js"
+[INFO]   created:    "Resources/iphone/alloy/controllers/colorPicker.js"
+[INFO]   created:     "Resources/iphone/alloy/styles/colorPicker.js"
+[INFO]   [editor.xml] view processing...
+[INFO]   style:      "editor.tss"
+[INFO]   view:       "editor.xml"
+[INFO]   controller: "editor.js"
+[INFO]   created:    "Resources/iphone/alloy/controllers/editor.js"
+[INFO]   created:     "Resources/iphone/alloy/styles/editor.js"
+[INFO]   [fontTable.xml] view processing...
+[INFO]   style:      "fontTable.tss"
+[INFO]   view:       "fontTable.xml"
+[INFO]   controller: "fontTable.js"
+[INFO]   created:    "Resources/iphone/alloy/controllers/fontTable.js"
+[INFO]   created:     "Resources/iphone/alloy/styles/fontTable.js"
+[INFO]   [index.xml] view processing...
+[INFO]   style:      "index.tss"
+[INFO]   view:       "index.xml"
+[INFO]   controller: "index.js"
+[INFO]   created:    "Resources/iphone/alloy/controllers/index.js"
+[INFO]   created:     "Resources/iphone/alloy/styles/index.js"
+[INFO]   [navMenu.xml] view processing...
+[INFO]   style:      "navMenu.tss"
+[INFO]   view:       "navMenu.xml"
+[INFO]   controller: "navMenu.js"
+[INFO]   created:    "Resources/iphone/alloy/controllers/navMenu.js"
+[INFO]   created:     "Resources/iphone/alloy/styles/navMenu.js"
+[INFO]   [root.xml] view processing...
+[INFO]   style:      "root.tss"
+[INFO]   view:       "root.xml"
+[INFO]   controller: "root.js"
+[INFO]   created:    "Resources/iphone/alloy/controllers/root.js"
+[INFO]   created:     "Resources/iphone/alloy/styles/root.js"
+[INFO]   
+[INFO]   [app.js] using cached app.js...
+[INFO]   
+[INFO]   ----- OPTIMIZING -----
+[INFO]   - iphone/alloy.js
+[INFO]   - iphone/alloy/sync/localStorage.js
+[INFO]   - iphone/alloy/sync/properties.js
+[INFO]   - iphone/alloy/sync/sql.js
+[INFO]   - iphone/alloy/widgets/nl.fokkezb.drawer/styles/widget.js
+[INFO]   - iphone/crux.js
+[INFO]   - iphone/db.js
+[INFO]   - iphone/ui.js
+[INFO]   - iphone/xp.ui.js
+[TRACE]  
+[TRACE]  Benchmarking
+[TRACE]  ------------
+[TRACE]  [0.99271s] TOTAL
+[INFO]   
+[INFO]   Alloy compiled in 0.99271s
+[INFO]   Alloy compiler completed successfully
+[TRACE]  Starting third-party framework detection
+[TRACE]  Scanning /Users/G/sandbox/zipbizcards/platform/ios for frameworks
+[TRACE]  Scanning /Users/G/sandbox/zipbizcards/modules/iphone/dk.napp.drawer/2.1.1/platform for frameworks
+[TRACE]  offline build file /var/folders/2g/ldzgdwk53qq_k37xz0m9qhk80000gn/T/build-d0593a594cc8caea63f7ceb54826262550738152.json
+[TRACE]  online 1
+[TRACE]  sending request {"json":{"username":"energy2080@gmail.com","session":"3a3ec5acfee6456962e67b8a0b4a3d6b5fcd1db4 dlgtwG+kgde4PBCQi001wtTAUg8ugan1e8Q1oxkqQe6NjrzFVPwvFwepGl+JbfybjBKIo1PRqm89v0aylm867QYh7Or/jZ5HED0pIOSw/ZtjKpMQtklho7w5l3k+PeFkRsIPsLZcKqj08hSeaBF1HMI95RfJVvSh0nrHIqikFvdVm5D/L+byAwsEP32qEksDAjdOGd8U5IN06TZQqmcIz05JnCtNZiqyAJ+VtfAvQbP7G1L5QsEcUj1awolShIYROtFmlTbY3djLGbPcMRBjZ0D52eE6M7mSl4m1DR/qbGh0/jHgcZQa0OgjSl/J8fRPv/CuXvt2hgrCDfNf4ZopW7Y6ImNJPEdbapat+hL+aif/e0/WyjWpXlM3F8nG5OJ97NVZ/etJN87Pxw8cdt/whJiKVVvzjRywXApM1gv93AFX342eGBoH30GIpVqiQtPk2dCAHk25IgzyyJA9JoJRLxEAJrZ+YxjODlUB9oGYIauSSa+suo7c7Sl2g3GR3Dxsr+zNWo6xs4m3gCwoHVjQ4xWrPAgaQYqixU+1jbjdIYiruWbSDKo2kKgyeD6l/FjVMQ46yXlIMq8NDXAhGsJcTpGg/kfnMqdFCbqXocRuyI9nPUbWezvqXoGh18kuDwE/LInPLi51dfYzeWkQ7PtoGSWbhJ8VBbz4lB/0H4w0SUd8yf4rK6BrDqCMNdBBYzhTcTjTwtRZXmZxpEQl/RGqEw==","ipaddress":"10.0.0.240","fingerprint":"3f6f10523172bd4093e851a485fed11fc1f924de","fingerprint_description":"Mac OSX Serial Number: C02RW3RBG8WN","guid":"729c1b0d-a880-43df-9888-9e2a846b4231","appid":"com.mb.zipbizcards","name":"zipbizcards","org_id":100037853,"deploytype":"test","tiappxml":"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<ti:app \n  xmlns:ti=\"http://ti.appcelerator.org\">\n  <id>com.mb.zipbizcards</id>\n  <name>zipbizcards</name>\n  <version>1.0</version>\n  <publisher>Mitul Bhalia</publisher>\n  <url>undefined</url>\n  <description>undefined</description>\n  <copyright>2019 by Ganesh</copyright>\n  <icon>appicon.png</icon>\n  <fullscreen>false</fullscreen>\n  <navbar-hidden>false</navbar-hidden>\n  <analytics>true</analytics>\n  <guid>729c1b0d-a880-43df-9888-9e2a846b4231</guid>\n  <!--<guid>21b1442c-8f38-425c-9555-c177d48b60dd</guid>!-->\n  <property name=\"ti.ui.defaultunit\" type=\"string\">dp</property>\n  <property name=\"run-on-main-thread\" type=\"bool\">***</property>\n  <ios>\n    <enable-launch-screen-storyboard>true</enable-launch-screen-storyboard>\n    <use-app-thinning>true</use-app-thinning>\n    <plist>\n      <dict>\n        <key>UISupportedInterfaceOrientations~iphone</key>\n        <array>\n          <string>UIInterfaceOrientationPortrait</string>\n        </array>\n        <key>UISupportedInterfaceOrientations~ipad</key>\n        <array>\n          <string>UIInterfaceOrientationPortrait</string>\n          <string>UIInterfaceOrientationPortraitUpsideDown</string>\n          <string>UIInterfaceOrientationLandscapeLeft</string>\n          <string>UIInterfaceOrientationLandscapeRight</string>\n        </array>\n        <key>UIRequiresPersistentWiFi</key>\n        <false/>\n        <key>UIPrerenderedIcon</key>\n        <false/>\n        <key>UIStatusBarHidden</key>\n        <true/>\n        <key>UIStatusBarStyle</key>\n        <string>UIStatusBarStyleDefault</string>\n      </dict>\n    </plist>\n  </ios>\n  <android \n    xmlns:android=\"http://schemas.android.com/apk/res/android\">\n    <manifest android:versionCode=\"1\" \n      xmlns:android=\"http://schemas.android.com/apk/res/android\"/>\n    </android>\n    <modules>\n      <module platform=\"iphone\">ti.draggable</module>\n      <module platform=\"iphone\">dk.napp.drawer</module>\n    </modules>\n    <deployment-targets>\n      <target device=\"android\">true</target>\n      <target device=\"ipad\">true</target>\n      <target device=\"iphone\">true</target>\n    </deployment-targets>\n    <sdk-version>7.4.1.GA</sdk-version>\n    <plugins>\n      <plugin version=\"1.0\">ti.alloy</plugin>\n    </plugins>\n    <property name=\"appc-app-id\" type=\"string\">5cf8e724913811099e96a530</property>\n  </ti:app>","modules":[{"id":"ti.draggable","platform":["iphone"],"deployType":["test"],"modulePath":"/Users/G/sandbox/zipbizcards/modules/iphone/ti.draggable/2.0.4","version":"2.0.4","manifest":{"version":"2.0.4","apiversion":"2","architectures":"armv7 arm64 i386 x86_64","description":"Ti.Draggable","author":"Seth Benjamin","license":"GPLv3","copyright":"Copyright (c) 2012 by Seth Benjamin","name":"draggable","moduleid":"ti.draggable","guid":"e8c13998-8fa8-4cee-8078-353c27e84d19","platform":"iphone","minsdk":"3.1.0.GA"},"native":true,"libName":"libti.draggable.a","libFile":"/Users/G/sandbox/zipbizcards/modules/iphone/ti.draggable/2.0.4/libti.draggable.a","hash":"121b505f4407d360293256ecb6725ea9"},{"id":"dk.napp.drawer","platform":["iphone"],"deployType":["test"],"modulePath":"/Users/G/sandbox/zipbizcards/modules/iphone/dk.napp.drawer/2.1.1","version":"2.1.1","manifest":{"version":"2.1.1","apiversion":"2","architectures":"armv7 i386 x86_64 arm64","description":"Drawer controller","author":"Mads Møller","license":"MIT","copyright":"Napp ApS","name":"NappDrawer","moduleid":"dk.napp.drawer","guid":"2a446559-1d59-4808-aefc-7d02d3130ebb","platform":"iphone","minsdk":"5.5.0"},"native":true,"libName":"libdk.napp.drawer.a","libFile":"/Users/G/sandbox/zipbizcards/modules/iphone/dk.napp.drawer/2.1.1/libdk.napp.drawer.a","hash":"77f45e778a68b67eaefe653b43f6621a"}]},"gzip":true,"followAllRedirects":true,"url":"https://platform.axway.com/api/v1/auth/build-verify"}
+[TRACE]  result from /build-verify=> {"key":"kJ6003RrmoDU96zV/iSAig==","pepper":"V5UAdZEL6cfYTykECpzxlw==","hmacKey":"gUlk72jw+CLRMR9oeo36XA==","o":100037853,"u":"cf335a98-21b1-4394-bc56-d4ac2cd4bdd2","p":"pro","i":"5d5dc977f64be46992da1889","success":true}, err=null
+[INFO]   JavaScript files need to be encrypted
+[INFO]   Creating Xcode project
+[TRACE]  Removing pre-compile phase
+[TRACE]  Adding 2 native module libraries
+[TRACE]  No extensions to add
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/zipbizcards.xcodeproj/project.pbxproj
+[INFO]   Creating Entitlements.plist
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/zipbizcards.entitlements
+[INFO]   Creating Info.plist
+[DEBUG]  Checking for Splash Screen localization
+[INFO]   Disabling ATS
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/Info.plist
+[INFO]   Creating main.m
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/main.m
+[INFO]   Creating Xcode config files
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/project.xcconfig
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/module.xcconfig
+[INFO]   Copying Titanium libraries
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/lib/libTiCore.a
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/lib/libtiverify.a
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/lib/libti_ios_debugger.a
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/lib/libti_ios_profiler.a
+[INFO]   Copying Titanium iOS files
+[TRACE]  Skipping Classes/ApplicationRouting.m, it'll be processed later
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/zipbizcards_Prefix.pch
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/zipbizcards.xcodeproj/xcshareddata/xcschemes/zipbizcards.xcscheme
+[INFO]   Installing default LaunchScreen.storyboard
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/LaunchScreen.storyboard
+[INFO]   Creating debugger and profiler plists
+[DEBUG]  Skipping /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/debugger.plist
+[DEBUG]  Skipping /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/profiler.plist
+[INFO]   Analyzing Resources directory
+[INFO]   Analyzing platform files
+[INFO]   Analyzing module files
+[INFO]   Analyzing localized launch images
+[INFO]   Analyzing CommonJS modules
+[INFO]   Creating asset catalog
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/Contents.json
+[INFO]   Creating app icon set
+[TRACE]  Found generated 29x29 app icon: /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/AppIcon.appiconset/appicon-Small.png
+[TRACE]  Found generated 58x58 app icon: /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/AppIcon.appiconset/appicon-Small@2x.png
+[TRACE]  Found generated 87x87 app icon: /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/AppIcon.appiconset/appicon-Small@3x.png
+[TRACE]  Found generated 40x40 app icon: /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/AppIcon.appiconset/appicon-Small-40.png
+[TRACE]  Found generated 80x80 app icon: /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/AppIcon.appiconset/appicon-Small-40@2x.png
+[TRACE]  Found generated 120x120 app icon: /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/AppIcon.appiconset/appicon-Small-40@3x.png
+[TRACE]  Found generated 120x120 app icon: /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/AppIcon.appiconset/appicon-60@2x.png
+[TRACE]  Found generated 180x180 app icon: /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/AppIcon.appiconset/appicon-60@3x.png
+[TRACE]  Found generated 76x76 app icon: /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/AppIcon.appiconset/appicon-76.png
+[TRACE]  Found generated 152x152 app icon: /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/AppIcon.appiconset/appicon-76@2x.png
+[TRACE]  Found generated 167x167 app icon: /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/AppIcon.appiconset/appicon-83.5@2x.png
+[TRACE]  Found generated 1024x1024 app icon: /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/AppIcon.appiconset/appicon-Marketing.png
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/AppIcon.appiconset/Contents.json
+[INFO]   Creating launch logo image set
+[TRACE]  Found generated 320x320 launch logo: /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/LaunchLogo.imageset/LaunchLogo~iphone.png
+[TRACE]  Found generated 374x374 launch logo: /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/LaunchLogo.imageset/LaunchLogo@2x~iphone.png
+[TRACE]  Found generated 621x621 launch logo: /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/LaunchLogo.imageset/LaunchLogo@3x~iphone.png
+[TRACE]  Found generated 384x384 launch logo: /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/LaunchLogo.imageset/LaunchLogo~ipad.png
+[TRACE]  Found generated 1024x1024 launch logo: /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/LaunchLogo.imageset/LaunchLogo@2x~ipad.png
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/LaunchLogo.imageset/Contents.json
+[INFO]   Creating launch image set
+[DEBUG]  Unsupported launch image Resources/iphone/Default.png, skipping
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/LaunchImage.launchimage/Contents.json
+[INFO]   Creating assets image set
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/1b2c5abebc6e86cf066271fa65a862f99bcc26b3.imageset/Contents.json
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/5b2de282f077f33f9e4541e1b61a3fae658c7c8c.imageset/Contents.json
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/426980d014bfd6b5403253692b24863e94a760ad.imageset/Contents.json
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/3dda676d838e3f02eb826f25e4999ccfc92097c1.imageset/Contents.json
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/a2c0cd53908d90ccd278c61a3808445d8dc008dc.imageset/Contents.json
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/4f9b9bd89b32af2ed42a82d93c834098186a3dfc.imageset/Contents.json
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/58fc2736ace49163cba03f2fd6139fd941952558.imageset/Contents.json
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/dc049874f1909bd8277ea1fcefd45712d354188e.imageset/Contents.json
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/f9cee2a62770c83712dabdba90a8d93a81d8f8cd.imageset/Contents.json
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/c03369ee53d069e585ef54a866cab0eb324efd65.imageset/Contents.json
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/0e9681f1ba4feed3eccfda2b9bc702da4751c73b.imageset/Contents.json
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/97d074b065776a05a80e5e66d24128211c01989d.imageset/Contents.json
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/8cc4674b93e76a3c51ead7d39d1d373844a8a149.imageset/Contents.json
+[DEBUG]  Copying resources
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/fonts/ALD721BC.TTF
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/fonts/ALTERN_1.TTF
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/fonts/AMRTYPEN.TTF
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/fonts/Archistico-Simple.ttf
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/fonts/Arial Bold.ttf
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/fonts/Arial Italic.ttf
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/fonts/Arial.ttf
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/fonts/Chalkduster.ttf
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/fonts/Cochin.ttf
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/fonts/Fayet.otf
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/fonts/Futurak.ttf
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/fonts/Harabara.ttf
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/fonts/HollywoodHills.ttf
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/fonts/Journal.ttf
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/fonts/Jrhand.ttf
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/fonts/Labtop.ttf
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/fonts/Lansbury.ttf
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/fonts/LithosPro-Bold.otf
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/fonts/LithosPro-Regular.otf
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/fonts/Parchment.ttf
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/fonts/SWZ921N.TTF
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/fonts/SchoolBully.ttf
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/fonts/TwCenBold.ttf
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/fonts/Verticalization.ttf
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/fonts/angelina.TTF
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/fonts/arlrdbd.ttf
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/fonts/comic_zine_ot.otf
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/fonts/french-script-mt.ttf
+[DEBUG]  Overwriting /Users/G/sandbox/zipbizcards/platform/ios/alloy_generated => /Users/G/sandbox/zipbizcards/build/iphone/alloy_generated
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/modules/dk.napp.drawer/README
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/LaunchImage.launchimage/Default-568h@2x.png
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/LaunchImage.launchimage/Default-667h@2x.png
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/LaunchImage.launchimage/Default-Landscape-1792h@2x.png
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/LaunchImage.launchimage/Default-Landscape-2436h@3x.png
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/LaunchImage.launchimage/Default-Landscape-2688h@3x.png
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/LaunchImage.launchimage/Default-Landscape-736h@3x.png
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/LaunchImage.launchimage/Default-Landscape.png
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/LaunchImage.launchimage/Default-Landscape@2x.png
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/LaunchImage.launchimage/Default-Portrait-1792h@2x.png
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/LaunchImage.launchimage/Default-Portrait-2436h@3x.png
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/LaunchImage.launchimage/Default-Portrait-2688h@3x.png
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/LaunchImage.launchimage/Default-Portrait-736h@3x.png
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/LaunchImage.launchimage/Default-Portrait.png
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/LaunchImage.launchimage/Default-Portrait@2x.png
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/LaunchImage.launchimage/Default@2x.png
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/1b2c5abebc6e86cf066271fa65a862f99bcc26b3.imageset/Tile-Black.png
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/1b2c5abebc6e86cf066271fa65a862f99bcc26b3.imageset/Tile-Black@2x.png
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/5b2de282f077f33f9e4541e1b61a3fae658c7c8c.imageset/Tile-Colors.png
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/5b2de282f077f33f9e4541e1b61a3fae658c7c8c.imageset/Tile-Colors@2x.png
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/426980d014bfd6b5403253692b24863e94a760ad.imageset/Tile-White.png
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/426980d014bfd6b5403253692b24863e94a760ad.imageset/Tile-White@2x.png
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/3dda676d838e3f02eb826f25e4999ccfc92097c1.imageset/aa.png
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/a2c0cd53908d90ccd278c61a3808445d8dc008dc.imageset/background.png
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/4f9b9bd89b32af2ed42a82d93c834098186a3dfc.imageset/close.png
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/58fc2736ace49163cba03f2fd6139fd941952558.imageset/image.png
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/dc049874f1909bd8277ea1fcefd45712d354188e.imageset/logo.png
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/f9cee2a62770c83712dabdba90a8d93a81d8f8cd.imageset/menu.png
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/c03369ee53d069e585ef54a866cab0eb324efd65.imageset/plus.png
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/0e9681f1ba4feed3eccfda2b9bc702da4751c73b.imageset/print.png
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/97d074b065776a05a80e5e66d24128211c01989d.imageset/rotate.jpg
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/Assets.xcassets/8cc4674b93e76a3c51ead7d39d1d373844a8a149.imageset/rotate.png
+[DEBUG]  Copying CSS files
+[INFO]   Processing JavaScript files
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/assets/alloy/CFG_js
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/assets/app_js
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/assets/alloy/backbone_js
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/assets/alloy/constants_js
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/assets/alloy/controllers/BaseController_js
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/assets/alloy/controllers/colorPicker_js
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/assets/alloy/controllers/editor_js
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/assets/alloy/controllers/fontTable_js
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/assets/alloy/controllers/index_js
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/assets/alloy/controllers/navMenu_js
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/assets/alloy/controllers/root_js
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/assets/alloy/styles/colorPicker_js
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/assets/alloy/styles/editor_js
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/assets/alloy/styles/fontTable_js
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/assets/alloy/styles/index_js
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/assets/alloy/styles/navMenu_js
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/assets/alloy/styles/root_js
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/assets/alloy/sync/localStorage_js
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/assets/alloy/sync/properties_js
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/assets/alloy/sync/sql_js
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/assets/alloy/underscore_js
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/assets/alloy/widget_js
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/assets/alloy/widgets/nl_fokkezb_drawer/controllers/widget_js
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/assets/alloy/widgets/nl_fokkezb_drawer/styles/widget_js
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/assets/alloy_js
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/assets/crux_js
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/assets/db_js
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/assets/ui_js
+[DEBUG]  Copying and minifying /Users/G/sandbox/zipbizcards/Resources/iphone/xp.ui.js => /Users/G/sandbox/zipbizcards/build/iphone/assets/xp_ui_js
+[INFO]   Writing app properties
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/assets/_app_props__json
+[INFO]   Encrypting JavaScript files
+[DEBUG]  Preparing alloy/CFG_js
+[DEBUG]  Preparing app_js
+[DEBUG]  Preparing alloy/backbone_js
+[DEBUG]  Preparing alloy/constants_js
+[DEBUG]  Preparing alloy/controllers/BaseController_js
+[DEBUG]  Preparing alloy/controllers/colorPicker_js
+[DEBUG]  Preparing alloy/controllers/editor_js
+[DEBUG]  Preparing alloy/controllers/fontTable_js
+[DEBUG]  Preparing alloy/controllers/index_js
+[DEBUG]  Preparing alloy/controllers/navMenu_js
+[DEBUG]  Preparing alloy/controllers/root_js
+[DEBUG]  Preparing alloy/styles/colorPicker_js
+[DEBUG]  Preparing alloy/styles/editor_js
+[DEBUG]  Preparing alloy/styles/fontTable_js
+[DEBUG]  Preparing alloy/styles/index_js
+[DEBUG]  Preparing alloy/styles/navMenu_js
+[DEBUG]  Preparing alloy/styles/root_js
+[DEBUG]  Preparing alloy/sync/localStorage_js
+[DEBUG]  Preparing alloy/sync/properties_js
+[DEBUG]  Preparing alloy/sync/sql_js
+[DEBUG]  Preparing alloy/underscore_js
+[DEBUG]  Preparing alloy/widget_js
+[DEBUG]  Preparing alloy/widgets/nl_fokkezb_drawer/controllers/widget_js
+[DEBUG]  Preparing alloy/widgets/nl_fokkezb_drawer/styles/widget_js
+[DEBUG]  Preparing alloy_js
+[DEBUG]  Preparing crux_js
+[DEBUG]  Preparing db_js
+[DEBUG]  Preparing ui_js
+[DEBUG]  Preparing xp_ui_js
+[DEBUG]  Preparing _app_props__json
+[DEBUG]  Running /Users/G/Library/Application Support/Titanium/mobilesdk/osx/7.4.1.GA/iphone/titanium_prep "com.mb.zipbizcards" "/Users/G/sandbox/zipbizcards/build/iphone/assets"
+[DEBUG]  Writing application routing source file: /Users/G/sandbox/zipbizcards/build/iphone/Classes/ApplicationRouting.m
+[INFO]   Writing i18n files
+[DEBUG]  Compiling localization files
+[DEBUG]  No i18n files to process
+[INFO]   Processing Titanium symbols
+[DEBUG]  Processing Titanium namespace resources
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/modules/ui/images/badge.png
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/modules/ui/images/closeButton.png
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/modules/ui/images/photoDefault.png
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/Classes/defines.h
+[INFO]   Removing files
+[DEBUG]  Removing empty directories
+[INFO]   Optimizing .plist and .png files
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/Info.plist
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/modules/ui/images/badge.png
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/modules/ui/images/closeButton.png
+[TRACE]  No change, skipping /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/modules/ui/images/photoDefault.png
+[DEBUG]  Optimizing /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/LaunchScreen.storyboardc/Info.plist
+[DEBUG]  Optimizing /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/AppIcon29x29@2x.png
+[DEBUG]  Optimizing /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/AppIcon29x29@2x~ipad.png
+[DEBUG]  Optimizing /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/AppIcon29x29@3x.png
+[DEBUG]  Optimizing /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/AppIcon29x29~ipad.png
+[DEBUG]  Optimizing /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/AppIcon40x40@2x.png
+[DEBUG]  Optimizing /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/AppIcon40x40@2x~ipad.png
+[DEBUG]  Optimizing /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/AppIcon40x40@3x.png
+[DEBUG]  Optimizing /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/AppIcon40x40~ipad.png
+[DEBUG]  Optimizing /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/AppIcon60x60@2x.png
+[DEBUG]  Optimizing /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/AppIcon60x60@3x.png
+[DEBUG]  Optimizing /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/AppIcon76x76@2x~ipad.png
+[DEBUG]  Optimizing /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/AppIcon76x76~ipad.png
+[DEBUG]  Optimizing /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/AppIcon83.5x83.5@2x~ipad.png
+[DEBUG]  Optimizing /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/LaunchImage-1100-Landscape-2436h@3x.png
+[DEBUG]  Optimizing /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/LaunchImage-1100-Portrait-2436h@3x.png
+[DEBUG]  Optimizing /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/LaunchImage-1200-Landscape-1792h@2x.png
+[DEBUG]  Optimizing /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/LaunchImage-1200-Landscape-2688h@3x.png
+[DEBUG]  Optimizing /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/LaunchImage-1200-Portrait-1792h@2x.png
+[DEBUG]  Optimizing /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/LaunchImage-1200-Portrait-2688h@3x.png
+[DEBUG]  Optimizing /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/LaunchImage-700-568h@2x.png
+[DEBUG]  Optimizing /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/LaunchImage-700-Landscape@2x~ipad.png
+[DEBUG]  Optimizing /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/LaunchImage-700-Landscape~ipad.png
+[DEBUG]  Optimizing /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/LaunchImage-700-Portrait@2x~ipad.png
+[DEBUG]  Optimizing /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/LaunchImage-700-Portrait~ipad.png
+[DEBUG]  Optimizing /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/LaunchImage-700@2x.png
+[DEBUG]  Optimizing /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/LaunchImage-800-667h@2x.png
+[DEBUG]  Optimizing /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/LaunchImage-800-Landscape-736h@3x.png
+[DEBUG]  Optimizing /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/LaunchImage-800-Portrait-736h@3x.png
+[INFO]   Invoking xcodebuild
+[DEBUG]  Invoking: DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild build -target zipbizcards -configuration Debug -scheme zipbizcards -derivedDataPath /Users/G/sandbox/zipbizcards/build/iphone/DerivedData -UseNewBuildSystem=YES OBJROOT=/Users/G/sandbox/zipbizcards/build/iphone/build/Intermediates SHARED_PRECOMPS_DIR=/Users/G/sandbox/zipbizcards/build/iphone/build/Intermediates/PrecompiledHeaders SYMROOT=/Users/G/sandbox/zipbizcards/build/iphone/build/Products
+[TRACE]  User defaults from command line:
+[TRACE]      IDEDerivedDataPathOverride = /Users/G/sandbox/zipbizcards/build/iphone/DerivedData
+[TRACE]      UseNewBuildSystem = YES
+[TRACE]  Build settings from command line:
+[TRACE]      OBJROOT = /Users/G/sandbox/zipbizcards/build/iphone/build/Intermediates
+[TRACE]      SHARED_PRECOMPS_DIR = /Users/G/sandbox/zipbizcards/build/iphone/build/Intermediates/PrecompiledHeaders
+[TRACE]      SYMROOT = /Users/G/sandbox/zipbizcards/build/iphone/build/Products
+[TRACE]  note: Using new build system
+[TRACE]  note: Planning build
+[TRACE]  note: Constructing build description
+[TRACE]  
+[TRACE]  ProcessProductPackaging "" /Users/G/sandbox/zipbizcards/build/iphone/build/Intermediates/zipbizcards.build/Debug-iphoneos/zipbizcards.build/zipbizcards.app.xcent (in target: zipbizcards)
+[TRACE]      cd /Users/G/sandbox/zipbizcards/build/iphone
+[TRACE]      
+[TRACE]  Entitlements:
+[TRACE]  {
+[TRACE]      "application-identifier" = "26Z93W682H.com.mb.zipbizcards";
+[TRACE]      "com.apple.developer.team-identifier" = A7985Z3473;
+[TRACE]      "get-task-allow" = 1;
+[TRACE]      "keychain-access-groups" =     (
+[TRACE]          "26Z93W682H.com.mb.zipbizcards"
+[TRACE]      );
+[TRACE]  }
+[TRACE]      builtin-productPackagingUtility -entitlements -format xml -o /Users/G/sandbox/zipbizcards/build/iphone/build/Intermediates/zipbizcards.build/Debug-iphoneos/zipbizcards.build/zipbizcards.app.xcent
+[TRACE]  
+[TRACE]  CompileC /Users/G/sandbox/zipbizcards/build/iphone/build/Intermediates/zipbizcards.build/Debug-iphoneos/zipbizcards.build/Objects-normal/armv7/ApplicationRouting.o /Users/G/sandbox/zipbizcards/build/iphone/Classes/ApplicationRouting.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler (in target: zipbizcards)
+[TRACE]      cd /Users/G/sandbox/zipbizcards/build/iphone
+[TRACE]      export LANG=en_US.US-ASCII
+[TRACE]      /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fmodules -gmodules -fmodules-cache-path=/Users/G/sandbox/zipbizcards/build/iphone/DerivedData/ModuleCache.noindex -fmodules-prune-interval=86400 -fmodules-prune-after=345600 -fbuild-session-file=/Users/G/sandbox/zipbizcards/build/iphone/DerivedData/ModuleCache.noindex/Session.modulevalidation -fmodules-validate-once-per-build-session -Wnon-modular-include-in-framework-module -Werror=non-modular-include-in-framework-module -Wno-trigraphs -fpascal-strings -O0 -fno-common -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wunreachable-code -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wno-parentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wno-unused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-float-conversion -Wnon-literal-null-conversion -Wobjc-literal-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEPLOYTYPE=test -DLAUNCHSCREEN_STORYBOARD=1 -DDEFAULT_BGCOLOR_RED=1 -DDEFAULT_BGCOLOR_GREEN=1 -DDEFAULT_BGCOLOR_BLUE=1 -DTI_LOG_SERVER_PORT=13536 -DOBJC_OLD_DISPATCH_PROTOTYPES=0 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -miphoneos-version-min=8.0 -g -Wno-sign-conversion -Winfinite-recursion -Wcomma -Wblock-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -Wno-unguarded-availability -index-store-path /Users/G/sandbox/zipbizcards/build/iphone/DerivedData/Index/DataStore -iquote /Users/G/sandbox/zipbizcards/build/iphone/build/Intermediates/zipbizcards.build/Debug-iphoneos/zipbizcards.build/zipbizcards-generated-files.hmap -I/Users/G/sandbox/zipbizcards/build/iphone/build/Intermediates/zipbizcards.build/Debug-iphoneos/zipbizcards.build/zipbizcards-own-target-headers.hmap -I/Users/G/sandbox/zipbizcards/build/iphone/build/Intermediates/zipbizcards.build/Debug-iphoneos/zipbizcards.build/zipbizcards-all-target-headers.hmap -iquote /Users/G/sandbox/zipbizcards/build/iphone/build/Intermediates/zipbizcards.build/Debug-iphoneos/zipbizcards.build/zipbizcards-project-headers.hmap -I/Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/usr/include/libxml2 -Iheaders -I/Users/G/sandbox/zipbizcards/build/iphone/build/Intermediates/zipbizcards.build/Debug-iphoneos/zipbizcards.build/DerivedSources/armv7 -I/Users/G/sandbox/zipbizcards/build/iphone/build/Intermediates/zipbizcards.build/Debug-iphoneos/zipbizcards.build/DerivedSources -Wno-arc-performSelector-leaks -F/Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos -DDEBUG -include /Users/G/sandbox/zipbizcards/build/iphone/build/Intermediates/PrecompiledHeaders/SharedPrecompiledHeaders/10331086668984561999/zipbizcards_Prefix.pch -MMD -MT dependencies -MF /Users/G/sandbox/zipbizcards/build/iphone/build/Intermediates/zipbizcards.build/Debug-iphoneos/zipbizcards.build/Objects-normal/armv7/ApplicationRouting.d --serialize-diagnostics /Users/G/sandbox/zipbizcards/build/iphone/build/Intermediates/zipbizcards.build/Debug-iphoneos/zipbizcards.build/Objects-normal/armv7/ApplicationRouting.dia -c /Users/G/sandbox/zipbizcards/build/iphone/Classes/ApplicationRouting.m -o /Users/G/sandbox/zipbizcards/build/iphone/build/Intermediates/zipbizcards.build/Debug-iphoneos/zipbizcards.build/Objects-normal/armv7/ApplicationRouting.o
+[TRACE]  
+[TRACE]  Ld /Users/G/sandbox/zipbizcards/build/iphone/build/Intermediates/zipbizcards.build/Debug-iphoneos/zipbizcards.build/Objects-normal/armv7/zipbizcards normal armv7 (in target: zipbizcards)
+[TRACE]      cd /Users/G/sandbox/zipbizcards/build/iphone
+[TRACE]      export IPHONEOS_DEPLOYMENT_TARGET=8.0
+[TRACE]      /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch armv7 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk -L/Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos -L/Users/G/sandbox/zipbizcards/build/iphone/lib -L/Users/G/sandbox/zipbizcards/build/iphone/Classes/APSAnalytics -L/Users/G/sandbox/zipbizcards/build/iphone/Classes/APSHTTPClient -L/Users/G/sandbox/zipbizcards/modules/iphone/ti.draggable/2.0.4 -L/Users/G/sandbox/zipbizcards/modules/iphone/dk.napp.drawer/2.1.1 -F/Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos -filelist /Users/G/sandbox/zipbizcards/build/iphone/build/Intermediates/zipbizcards.build/Debug-iphoneos/zipbizcards.build/Objects-normal/armv7/zipbizcards.LinkFileList -miphoneos-version-min=8.0 -dead_strip -Xlinker -object_path_lto -Xlinker /Users/G/sandbox/zipbizcards/build/iphone/build/Intermediates/zipbizcards.build/Debug-iphoneos/zipbizcards.build/Objects-normal/armv7/zipbizcards_lto.o -Xlinker -export_dynamic -Xlinker -no_deduplicate -Xlinker -final_output -Xlinker /Applications/zipbizcards.app/zipbizcards -stdlib=libc++ -fobjc-link-runtime -ObjC -weak_framework JavaScriptCore -framework Foundation -framework Foundation -framework QuartzCore -framework QuartzCore -framework CoreMedia -weak_framework CoreMotion -lAPSAnalytics -weak_framework CoreText -framework EventKit -framework EventKitUI -weak_framework Security -licucore -framework Foundation -weak_framework UIKit -framework CoreGraphics -weak_framework AddressBook -framework AddressBookUI -framework CFNetwork -framework CoreLocation -weak_framework MapKit -framework MessageUI -framework MobileCoreServices -framework OpenGLES -framework QuartzCore -framework SystemConfiguration -lsqlite3 -lz -framework AudioToolbox -weak_framework MediaPlayer -framework AVFoundation -lxml2 -lAPSHTTPClient -ltiverify -lti.draggable -ldk.napp.drawer -Xlinker -dependency_info -Xlinker /Users/G/sandbox/zipbizcards/build/iphone/build/Intermediates/zipbizcards.build/Debug-iphoneos/zipbizcards.build/Objects-normal/armv7/zipbizcards_dependency_info.dat -o /Users/G/sandbox/zipbizcards/build/iphone/build/Intermediates/zipbizcards.build/Debug-iphoneos/zipbizcards.build/Objects-normal/armv7/zipbizcards
+[TRACE]  
+[TRACE]  CompileC /Users/G/sandbox/zipbizcards/build/iphone/build/Intermediates/zipbizcards.build/Debug-iphoneos/zipbizcards.build/Objects-normal/arm64/ApplicationRouting.o /Users/G/sandbox/zipbizcards/build/iphone/Classes/ApplicationRouting.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler (in target: zipbizcards)
+[TRACE]      cd /Users/G/sandbox/zipbizcards/build/iphone
+[TRACE]      export LANG=en_US.US-ASCII
+[TRACE]      /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch arm64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fmodules -gmodules -fmodules-cache-path=/Users/G/sandbox/zipbizcards/build/iphone/DerivedData/ModuleCache.noindex -fmodules-prune-interval=86400 -fmodules-prune-after=345600 -fbuild-session-file=/Users/G/sandbox/zipbizcards/build/iphone/DerivedData/ModuleCache.noindex/Session.modulevalidation -fmodules-validate-once-per-build-session -Wnon-modular-include-in-framework-module -Werror=non-modular-include-in-framework-module -Wno-trigraphs -fpascal-strings -O0 -fno-common -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wunreachable-code -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wno-parentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wno-unused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-float-conversion -Wnon-literal-null-conversion -Wobjc-literal-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEPLOYTYPE=test -DLAUNCHSCREEN_STORYBOARD=1 -DDEFAULT_BGCOLOR_RED=1 -DDEFAULT_BGCOLOR_GREEN=1 -DDEFAULT_BGCOLOR_BLUE=1 -DTI_LOG_SERVER_PORT=13536 -DOBJC_OLD_DISPATCH_PROTOTYPES=0 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -miphoneos-version-min=8.0 -g -Wno-sign-conversion -Winfinite-recursion -Wcomma -Wblock-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -Wno-unguarded-availability -index-store-path /Users/G/sandbox/zipbizcards/build/iphone/DerivedData/Index/DataStore -iquote /Users/G/sandbox/zipbizcards/build/iphone/build/Intermediates/zipbizcards.build/Debug-iphoneos/zipbizcards.build/zipbizcards-generated-files.hmap -I/Users/G/sandbox/zipbizcards/build/iphone/build/Intermediates/zipbizcards.build/Debug-iphoneos/zipbizcards.build/zipbizcards-own-target-headers.hmap -I/Users/G/sandbox/zipbizcards/build/iphone/build/Intermediates/zipbizcards.build/Debug-iphoneos/zipbizcards.build/zipbizcards-all-target-headers.hmap -iquote /Users/G/sandbox/zipbizcards/build/iphone/build/Intermediates/zipbizcards.build/Debug-iphoneos/zipbizcards.build/zipbizcards-project-headers.hmap -I/Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/usr/include/libxml2 -Iheaders -I/Users/G/sandbox/zipbizcards/build/iphone/build/Intermediates/zipbizcards.build/Debug-iphoneos/zipbizcards.build/DerivedSources/arm64 -I/Users/G/sandbox/zipbizcards/build/iphone/build/Intermediates/zipbizcards.build/Debug-iphoneos/zipbizcards.build/DerivedSources -Wno-arc-performSelector-leaks -F/Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos -DDEBUG -include /Users/G/sandbox/zipbizcards/build/iphone/build/Intermediates/PrecompiledHeaders/SharedPrecompiledHeaders/16109481907081339929/zipbizcards_Prefix.pch -MMD -MT dependencies -MF /Users/G/sandbox/zipbizcards/build/iphone/build/Intermediates/zipbizcards.build/Debug-iphoneos/zipbizcards.build/Objects-normal/arm64/ApplicationRouting.d --serialize-diagnostics /Users/G/sandbox/zipbizcards/build/iphone/build/Intermediates/zipbizcards.build/Debug-iphoneos/zipbizcards.build/Objects-normal/arm64/ApplicationRouting.dia -c /Users/G/sandbox/zipbizcards/build/iphone/Classes/ApplicationRouting.m -o /Users/G/sandbox/zipbizcards/build/iphone/build/Intermediates/zipbizcards.build/Debug-iphoneos/zipbizcards.build/Objects-normal/arm64/ApplicationRouting.o
+[TRACE]  
+[TRACE]  Ld /Users/G/sandbox/zipbizcards/build/iphone/build/Intermediates/zipbizcards.build/Debug-iphoneos/zipbizcards.build/Objects-normal/arm64/zipbizcards normal arm64 (in target: zipbizcards)
+[TRACE]      cd /Users/G/sandbox/zipbizcards/build/iphone
+[TRACE]      export IPHONEOS_DEPLOYMENT_TARGET=8.0
+[TRACE]      /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk -L/Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos -L/Users/G/sandbox/zipbizcards/build/iphone/lib -L/Users/G/sandbox/zipbizcards/build/iphone/Classes/APSAnalytics -L/Users/G/sandbox/zipbizcards/build/iphone/Classes/APSHTTPClient -L/Users/G/sandbox/zipbizcards/modules/iphone/ti.draggable/2.0.4 -L/Users/G/sandbox/zipbizcards/modules/iphone/dk.napp.drawer/2.1.1 -F/Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos -filelist /Users/G/sandbox/zipbizcards/build/iphone/build/Intermediates/zipbizcards.build/Debug-iphoneos/zipbizcards.build/Objects-normal/arm64/zipbizcards.LinkFileList -miphoneos-version-min=8.0 -dead_strip -Xlinker -object_path_lto -Xlinker /Users/G/sandbox/zipbizcards/build/iphone/build/Intermediates/zipbizcards.build/Debug-iphoneos/zipbizcards.build/Objects-normal/arm64/zipbizcards_lto.o -Xlinker -export_dynamic -Xlinker -no_deduplicate -Xlinker -final_output -Xlinker /Applications/zipbizcards.app/zipbizcards -stdlib=libc++ -fobjc-link-runtime -ObjC -weak_framework JavaScriptCore -framework Foundation -framework Foundation -framework QuartzCore -framework QuartzCore -framework CoreMedia -weak_framework CoreMotion -lAPSAnalytics -weak_framework CoreText -framework EventKit -framework EventKitUI -weak_framework Security -licucore -framework Foundation -weak_framework UIKit -framework CoreGraphics -weak_framework AddressBook -framework AddressBookUI -framework CFNetwork -framework CoreLocation -weak_framework MapKit -framework MessageUI -framework MobileCoreServices -framework OpenGLES -framework QuartzCore -framework SystemConfiguration -lsqlite3 -lz -framework AudioToolbox -weak_framework MediaPlayer -framework AVFoundation -lxml2 -lAPSHTTPClient -ltiverify -lti.draggable -ldk.napp.drawer -Xlinker -dependency_info -Xlinker /Users/G/sandbox/zipbizcards/build/iphone/build/Intermediates/zipbizcards.build/Debug-iphoneos/zipbizcards.build/Objects-normal/arm64/zipbizcards_dependency_info.dat -o /Users/G/sandbox/zipbizcards/build/iphone/build/Intermediates/zipbizcards.build/Debug-iphoneos/zipbizcards.build/Objects-normal/arm64/zipbizcards
+[TRACE]  
+[TRACE]  CreateUniversalBinary /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/zipbizcards normal armv7\ arm64 (in target: zipbizcards)
+[TRACE]      cd /Users/G/sandbox/zipbizcards/build/iphone
+[TRACE]      /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo -create /Users/G/sandbox/zipbizcards/build/iphone/build/Intermediates/zipbizcards.build/Debug-iphoneos/zipbizcards.build/Objects-normal/armv7/zipbizcards /Users/G/sandbox/zipbizcards/build/iphone/build/Intermediates/zipbizcards.build/Debug-iphoneos/zipbizcards.build/Objects-normal/arm64/zipbizcards -output /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/zipbizcards
+[TRACE]  
+[TRACE]  ProcessInfoPlistFile /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/Info.plist /Users/G/sandbox/zipbizcards/build/iphone/Info.plist (in target: zipbizcards)
+[TRACE]      cd /Users/G/sandbox/zipbizcards/build/iphone
+[TRACE]      builtin-infoPlistUtility /Users/G/sandbox/zipbizcards/build/iphone/Info.plist -genpkginfo /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -additionalcontentfile /Users/G/sandbox/zipbizcards/build/iphone/build/Intermediates/zipbizcards.build/Debug-iphoneos/zipbizcards.build/LaunchScreen-SBPartialInfo.plist -additionalcontentfile /Users/G/sandbox/zipbizcards/build/iphone/build/Intermediates/zipbizcards.build/Debug-iphoneos/zipbizcards.build/assetcatalog_generated_info.plist -o /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/Info.plist
+[TRACE]  
+[TRACE]  GenerateDSYMFile /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app.dSYM /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/zipbizcards (in target: zipbizcards)
+[TRACE]      cd /Users/G/sandbox/zipbizcards/build/iphone
+[TRACE]      /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/zipbizcards -o /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app.dSYM
+[TRACE]  
+[TRACE]  Strip /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/zipbizcards (in target: zipbizcards)
+[TRACE]      cd /Users/G/sandbox/zipbizcards/build/iphone
+[TRACE]      /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app/zipbizcards
+[TRACE]  
+[TRACE]  CodeSign /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app (in target: zipbizcards)
+[TRACE]      cd /Users/G/sandbox/zipbizcards/build/iphone
+[TRACE]      export CODESIGN_ALLOCATE=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/codesign_allocate
+[TRACE]      
+[TRACE]  Signing Identity:     "iPhone Developer: Gary Richard (VC8VV46SKD)"
+[TRACE]  Provisioning Profile: "HEM Wildcard"
+[TRACE]                        (ff5eab10-f544-4c88-9d00-99da3ec0f654)
+[TRACE]      /usr/bin/codesign --force --sign 3469D693D7B28D958147A8EF9FEB4ACDB237066E --entitlements /Users/G/sandbox/zipbizcards/build/iphone/build/Intermediates/zipbizcards.build/Debug-iphoneos/zipbizcards.build/zipbizcards.app.xcent --timestamp=none /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app
+[TRACE]  
+[TRACE]  Validate /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app (in target: zipbizcards)
+[TRACE]      cd /Users/G/sandbox/zipbizcards/build/iphone
+[TRACE]      builtin-validationUtility /Users/G/sandbox/zipbizcards/build/iphone/build/Products/Debug-iphoneos/zipbizcards.app
+[TRACE]  
+[TRACE]  ** BUILD SUCCEEDED **
+[INFO]   Finished building the application in 13s 222ms
+[INFO]   Installing app on device: G iPhone
+[INFO]   App successfully installed on device: G iPhone
